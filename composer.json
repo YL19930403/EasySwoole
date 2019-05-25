@@ -6,6 +6,8 @@
     },
     "require": {
         "easyswoole/easyswoole": "2.x-dev",
-        "easyswoole/mysqli": "^1.1"
+        "easyswoole/mysqli": "^1.1",
+        "topthink/think-orm": "^2.0",
+        "joshcam/mysqli-database-class": "dev-master"
     }
 }
