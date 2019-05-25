@@ -1,0 +1,10 @@
+19-05-25 10:32:26:Error at file[/Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php] line[115] message:[Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501]. Error: Address already in use[48]. in /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php:115
+Stack trace:
+#0 /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(115): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#2 /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#3 /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#4 /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(25): serverStart(Array)
+#5 /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
+#6 /Users/yuliang/easyswoole/easyswoole(2): require('/Users/yuliang/...')
+#7 {ma]

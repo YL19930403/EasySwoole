@@ -1,0 +1,117 @@
+#!/usr/bin/env php
+server stop at 19-05-23 11:41:11
+#!/usr/bin/env php
+  ______                          _____                              _
+ |  ____|                        / ____|                            | |
+ | |__      __ _   ___   _   _  | (___   __      __   ___     ___   | |   ___
+ |  __|    / _` | / __| | | | |  \___ \  \ \ /\ / /  / _ \   / _ \  | |  / _ \
+ | |____  | (_| | \__ \ | |_| |  ____) |  \ V  V /  | (_) | | (_) | | | |  __/
+ |______|  \__,_| |___/  \__, | |_____/    \_/\_/    \___/   \___/  |_|  \___|
+                          __/ |
+                         |___/
+
+[31mEasySwoole[0m framework [34mVersion 2.1.4[0m
+
+[32mlisten address      [34m0.0.0.0[0m
+[32mlisten port         [34m9501[0m
+[32mworker num          [34m8[0m
+[32mtask worker num     [34m8[0m
+[32mrun at user         [34myuliang[0m
+[32mdaemonize           [34mtrue[0m
+[32mdebug enable        [34mtrue[0m
+[32mswoole version      [34m4.2.8[0m
+[32mphp version         [34m7.2.9[0m
+#!/usr/bin/env php
+send server reload command at 19-05-23 01:44:26
+#!/usr/bin/env php
+send server reload command at 19-05-23 01:44:26
+#!/usr/bin/env php
+send server reload command at 19-05-23 01:44:26
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:04:52
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:04:52
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:04:52
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:29:41
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:29:41
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:29:41
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:34:20
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:34:20
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:34:21
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:35:52
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:20
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:29
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:34
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:40
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:40
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:40
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:45
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:45
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:37:45
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:38:02
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:38:02
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:38:02
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:38:36
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:38:36
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:38:36
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:14
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:15
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:15
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:21
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:22
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:22
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:44
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:44
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:44
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:47
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:47
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:48
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:52
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:53
+#!/usr/bin/env php
+send server reload command at 19-05-23 02:39:53
+2019-05-23 14:46 fswatch[46709] (FSEvents.framework) server_gone_StreamRef_callback: ERROR: FSEvents_connect() => unknown error code (124)
+2019-05-23 14:46 fswatch[46709] (FSEvents.framework) server_gone_StreamRef_callback: failed to reconnect to server! (kr 0x7c)
+2019-05-23 14:46 fswatch[46709] (FSEvents.framework) FSEventStreamStop(): failed assertion 'streamRef->f2d_private_port != MACH_PORT_NULL'
+
+2019-05-23 14:46 fswatch[46709] (FSEvents.framework) streamRef->cfRunLoopSourceRef != NULL || streamRef->event_source != NULL(): failed assertion: Must call FSEventStreamScheduleWithRunLoop() before calling FSEventStreamInvalidate()
+
+2019-05-23 14:46 fswatch[46709] (FSEvents.framework) !streamRef->isStarted(): failed assertion: FSEventStream was released (causing it to be deallocated) without calling FSEventStreamStop()
+
