@@ -8,12 +8,14 @@
 
 namespace EasySwoole;
 
+use App\Lib\Redis\Redis;
 use \EasySwoole\Core\AbstractInterface\EventInterface;
 use EasySwoole\Core\Component\Di;
 use \EasySwoole\Core\Swoole\ServerManager;
 use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
 use \EasySwoole\Core\Http\Response;
+use EasySwoole\Core\Utility\File;
 
 Class EasySwooleEvent implements EventInterface {
 
@@ -21,6 +23,22 @@ Class EasySwooleEvent implements EventInterface {
     {
         // TODO: Implement frameInitialize() method.
         date_default_timezone_set('Asia/Shanghai');
+
+        //载入Conf文件夹中所有的配置文件
+//        EASYSWOOLE_ROOT = /Users/yuliang/EasySwoole
+        self::loadConf(EASYSWOOLE_ROOT . '/Config');
+    }
+
+
+    public static function loadConf($ConfPath)
+    {
+        $Conf = Config::getInstance();
+        $files = File::scanDir($ConfPath);
+        foreach ($files as $file)
+        {
+            $data = require_once $file;
+            $Conf->setConf(strtolower(basename($file, '.php')), (array)$data);
+        }
     }
 
     /**
@@ -45,7 +63,11 @@ Class EasySwooleEvent implements EventInterface {
             'port' => 3306,
             'charset' => 'utf8',
         ));
+
+        Di::getInstance()->set('REDIS', Redis::getInstance());
     }
+
+
 
     public static function onRequest(Request $request,Response $response): void
     {

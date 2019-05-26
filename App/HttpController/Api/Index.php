@@ -10,8 +10,7 @@ namespace App\HttpController\Api;
 
 use App\Model\Video;
 use EasySwoole\Core\Component\Di;
-
-
+use App\Lib\Redis\Redis;
 
 class Index extends Base
 {
@@ -46,5 +45,30 @@ class Index extends Base
 //        $vModel = new Video();
 //        $result = $vModel->getVideoBy(1);
 //        return $this->writeJson(200, 'ok', $result);
+    }
+
+    public function getRedis()
+    {
+//        $redis = new \Redis();
+//        $redis->connect('127.0.0.1',6379,5);
+//        $redis->set('test', 'this is aaa', 60);
+//        $result = $redis->get('test');
+//        return $this->writeJson(200, 'ok', $result);
+        $data = [
+            'name' => 'ioio',
+            'age' => 29,
+        ];
+        //Redis操作方法1：
+        //自己封装的Redis类
+        Redis::getInstance()->set('test', $data);
+        $result = Redis::getInstance()->get('test');
+
+        //Redis操作方法2:
+        //在mainServerCreate方法中已经注入过了REDIS
+//        $redisDb = Di::getInstance()->get('REDIS');
+//        $redisDb->set('test', $data, 180);
+//        $result = $redisDb->get('test');
+        return $this->writeJson(200, 'ok', $result);
+
     }
 }

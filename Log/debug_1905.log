@@ -8,3 +8,72 @@ Stack trace:
 #5 /Users/yuliang/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
 #6 /Users/yuliang/easyswoole/easyswoole(2): require('/Users/yuliang/...')
 #7 {ma]
+19-05-26 23:23:36:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[37] message:[Uncaught Exception: Invalid argument in /Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php:37
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php(18): App\Lib\Redis\Redis->__construct()
+#1 /Users/yuliang/EasySwoole/EasySwooleEvent.php(54): App\Lib\Redis\Redis::getInstance()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(130): EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\Core\Swoole\ServerManager), Object(EasySwoole\Core\Swoole\EventRegister))
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
+19-05-26 23:24:28:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[37] message:[Uncaught Exception: Invalid argument in /Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php:37
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php(18): App\Lib\Redis\Redis->__construct()
+#1 /Users/yuliang/EasySwoole/EasySwooleEvent.php(54): App\Lib\Redis\Redis::getInstance()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(130): EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\Core\Swoole\ServerManager), Object(EasySwoole\Core\Swoole\EventRegister))
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
+19-05-26 23:24:33:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[37] message:[Uncaught Exception: Invalid argument in /Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php:37
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php(18): App\Lib\Redis\Redis->__construct()
+#1 /Users/yuliang/EasySwoole/EasySwooleEvent.php(54): App\Lib\Redis\Redis::getInstance()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(130): EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\Core\Swoole\ServerManager), Object(EasySwoole\Core\Swoole\EventRegister))
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
+19-05-26 23:24:45:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[37] message:[Uncaught Exception: Invalid argument in /Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php:37
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php(18): App\Lib\Redis\Redis->__construct()
+#1 /Users/yuliang/EasySwoole/EasySwooleEvent.php(54): App\Lib\Redis\Redis::getInstance()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(130): EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\Core\Swoole\ServerManager), Object(EasySwoole\Core\Swoole\EventRegister))
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
+19-05-26 23:25:36:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[35] message:[Undefined index: host]
+19-05-26 23:25:36:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[35] message:[Undefined index: port]
+19-05-26 23:25:36:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[35] message:[Undefined index: time_out]
+19-05-26 23:25:36:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[37] message:[Uncaught Exception: Invalid argument in /Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php:37
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php(18): App\Lib\Redis\Redis->__construct()
+#1 /Users/yuliang/EasySwoole/EasySwooleEvent.php(54): App\Lib\Redis\Redis::getInstance()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(130): EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\Core\Swoole\ServerManager), Object(EasySwoole\Core\Swoole\EventRegister))
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
+19-05-26 23:26:49:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[35] message:[Undefined index: host]
+19-05-26 23:26:49:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[35] message:[Undefined index: port]
+19-05-26 23:26:49:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[35] message:[Undefined index: time_out]
+19-05-26 23:26:49:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[37] message:[Uncaught Exception: Invalid argument in /Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php:37
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php(18): App\Lib\Redis\Redis->__construct()
+#1 /Users/yuliang/EasySwoole/EasySwooleEvent.php(54): App\Lib\Redis\Redis::getInstance()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(130): EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\Core\Swoole\ServerManager), Object(EasySwoole\Core\Swoole\EventRegister))
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
+19-05-26 23:31:14:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[37] message:[Uncaught Exception: Invalid argument in /Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php:37
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php(18): App\Lib\Redis\Redis->__construct()
+#1 /Users/yuliang/EasySwoole/EasySwooleEvent.php(66): App\Lib\Redis\Redis::getInstance()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(130): EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\Core\Swoole\ServerManager), Object(EasySwoole\Core\Swoole\EventRegister))
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
