@@ -14,6 +14,6 @@ class Index extends Controller
 {
     public function index()
     {
-        $this->response()->write('hello world');
+        $this->response()->write(1);
     }
 }

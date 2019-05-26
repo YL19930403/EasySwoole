@@ -33,8 +33,8 @@ class Base extends Controller
 
     public function onException(\Throwable $throwable, $actionName): void
     {
-//        parent::onException($throwable, $actionName);
-          $this->writeJson(400, '请求不合法');
+        parent::onException($throwable, $actionName);
+//          $this->writeJson(400, '请求不合法');
     }
 
 }

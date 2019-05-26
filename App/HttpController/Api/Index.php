@@ -8,6 +8,7 @@
 
 namespace App\HttpController\Api;
 
+use App\Model\Video;
 use EasySwoole\Core\Component\Di;
 
 
@@ -16,10 +17,11 @@ class Index extends Base
 {
     //子类Index继承自抽象父类Controller, 父类中有抽象方法abstract index() , 那么子类也必须实现该index方法
 
-    //http://wudy.easyswoole.cn:8090/api/index
-//    public function index()
-//    {
-//    }
+    //http://wudy.easyswoole.cn:8090/api/index/index
+    public function index()
+    {
+        $this->response()->write(1);
+    }
 
     //http://wudy.easyswoole.cn:8090/api/video?age=0
     //http://wudy.easyswoole.cn:8090/api/index/video
@@ -36,8 +38,13 @@ class Index extends Base
         //查询数据库(MysqliDb方式)
         //在mainServerCreate方法中已经注入过了MYSQL
         $db = Di::getInstance()->get('MYSQL');
-        $result = $db->where('id', 1)->getOne('video');
-//        print_r($result);
+        $result = $db->where('id', 15)->getOne('video');
         return $this->writeJson(200, 'ok', $result);
+
+
+        //查询数据库(TpORM)
+//        $vModel = new Video();
+//        $result = $vModel->getVideoBy(1);
+//        return $this->writeJson(200, 'ok', $result);
     }
 }

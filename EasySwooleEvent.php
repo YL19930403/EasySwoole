@@ -39,7 +39,7 @@ Class EasySwooleEvent implements EventInterface {
         //Di 依赖注入
         Di::getInstance()->set('MYSQL', \MysqliDb::class, Array(
             'host' => '127.0.0.1',
-            'user' => 'root',
+            'username' => 'root',
             'password' => '000000',
             'db' => 'blog',
             'port' => 3306,
