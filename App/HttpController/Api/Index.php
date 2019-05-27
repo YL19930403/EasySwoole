@@ -40,7 +40,6 @@ class Index extends Base
         $result = $db->where('id', 15)->getOne('video');
         return $this->writeJson(200, 'ok', $result);
 
-
         //查询数据库(TpORM)
 //        $vModel = new Video();
 //        $result = $vModel->getVideoBy(1);
@@ -55,8 +54,8 @@ class Index extends Base
 //        $result = $redis->get('test');
 //        return $this->writeJson(200, 'ok', $result);
         $data = [
-            'name' => 'ioio',
-            'age' => 29,
+            'name' => 'timo',
+            'age' => 30,
         ];
         //Redis操作方法1：
         //自己封装的Redis类
@@ -68,6 +67,14 @@ class Index extends Base
 //        $redisDb = Di::getInstance()->get('REDIS');
 //        $redisDb->set('test', $data, 180);
 //        $result = $redisDb->get('test');
+        return $this->writeJson(200, 'ok', $result);
+
+    }
+
+    //http://wudy.easyswoole.cn:8090/api/index/yaConf
+    public function yaConf()
+    {
+        $result = \Yaconf::get('redis');
         return $this->writeJson(200, 'ok', $result);
 
     }

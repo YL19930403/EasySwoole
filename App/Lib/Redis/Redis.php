@@ -30,7 +30,9 @@ class Redis
 
         try {
 //            $redis_config = Config::getInstance()->getConf('REDIS');  //读取的是根目录下的Config文件
-            $redis_config = Config::getInstance()->getConf('redis.REDIS'); //读取的是根目录下Config目录的redis文件
+//            $redis_config = Config::getInstance()->getConf('redis.REDIS'); //读取的是根目录下Config目录的redis文件
+
+            $redis_config = \Yaconf::get('redis');  //读取Yaconf配置, ini/redis.ini文件
             $this->redis = new \Redis();
             $result = $this->redis->connect($redis_config['host'], $redis_config['port'], $redis_config['time_out']);
         }catch (\Exception $e){
