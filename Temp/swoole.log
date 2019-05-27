@@ -1081,3 +1081,10 @@
 [2019-05-27 18:03:42 $62651.0]	NOTICE	Server is reloading now.
 [2019-05-27 18:03:42 $62651.0]	NOTICE	Server is reloading now.
 [2019-05-27 18:04:48 #62650.4]	NOTICE	Server is shutdown now.
+string(25) "consumer_0 task run check"
+string(25) "string(25) "consumer_2 task run check"
+consumer_1 task run check"
+[2019-05-27 21:15:29 $9661.0]	NOTICE	Server is reloading now.
+[2019-05-27 21:15:29 $9661.0]	NOTICE	Server is reloading now.
+[2019-05-27 21:15:29 $9661.0]	NOTICE	Server is reloading now.
+[2019-05-27 21:15:38 #9660.4]	NOTICE	Server is shutdown now.

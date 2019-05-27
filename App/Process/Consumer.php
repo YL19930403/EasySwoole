@@ -22,6 +22,7 @@ class Consumer extends AbstractProcess
         $this->addTick(500, function (){
             if(!$this->isRun)
             {
+                var_dump($this->getProcessName().' task run check');
                 $this->isRun = true;
                 while (true)
                 {
@@ -32,10 +33,10 @@ class Consumer extends AbstractProcess
                             //发送邮件、或者短信、或者写日志
                             Logger::getInstance()->log($this->getProcessName() . "---" . $task);
                         }else{
-                            return;
+                            break;
                         }
                     }catch (\Throwable $throwable){
-                        return;
+                        break;
                     }
                 }
                 $this->isRun = false;
