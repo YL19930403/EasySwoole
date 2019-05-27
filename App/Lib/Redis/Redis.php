@@ -69,6 +69,12 @@ class Redis
         return $this->redis->get($key);
     }
 
+    /**
+     * @param string $key
+     * @param $value
+     * @param int $timeout
+     * @return bool
+     */
     public function set(string $key='', $value,$timeout=self::DEFAULT_TTL )
     {
         if(empty($key))
@@ -81,4 +87,60 @@ class Redis
         }
         return $this->redis->set($key, $value, $timeout);
     }
+
+    /**
+     * @param string $key
+     * @return string
+     */
+    public function lPop(string $key='')
+    {
+        if(empty($key))
+        {
+            return '';
+        }
+        return $this->redis->lPop($key);
+    }
+
+    /**
+     * @param string $key
+     * @param $value
+     * @return int|string
+     */
+    public function lPush(string $key='', $value)
+    {
+        if(empty($key))
+        {
+            return '';
+        }
+        return $this->redis->lPush($key, $value);
+    }
+
+    /**
+     * @param string $key
+     * @return string
+     */
+    public function rPop(string $key='')
+    {
+        if(empty($key))
+        {
+            return '';
+        }
+        return $this->redis->rPop($key);
+    }
+
+    /**
+     * @param string $key
+     * @param $value
+     * @return int|string
+     */
+    public function rPush(string $key='', $value)
+    {
+        if(empty($key))
+        {
+            return '';
+        }
+        return $this->redis->rPush($key, $value);
+    }
+
+
 }

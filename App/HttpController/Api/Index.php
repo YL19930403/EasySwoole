@@ -11,6 +11,7 @@ namespace App\HttpController\Api;
 use App\Model\Video;
 use EasySwoole\Core\Component\Di;
 use App\Lib\Redis\Redis;
+use EasySwoole\Core\Component\Trigger;
 
 class Index extends Base
 {
@@ -77,5 +78,12 @@ class Index extends Base
         $result = \Yaconf::get('redis');
         return $this->writeJson(200, 'ok', $result);
 
+    }
+
+    //http://wudy.easyswoole.cn:8090/api/index/pub?age=12
+    public function pub()
+    {
+        $params = $this->request()->getRequestParam();
+        Redis::getInstance()->rPush('redis_test', $params['age']);
     }
 }

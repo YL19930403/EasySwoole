@@ -8,7 +8,9 @@
 
 namespace EasySwoole;
 
+
 use App\Lib\Redis\Redis;
+use App\Process\Consumer;
 use \EasySwoole\Core\AbstractInterface\EventInterface;
 use EasySwoole\Core\Component\Di;
 use \EasySwoole\Core\Swoole\ServerManager;
@@ -16,6 +18,8 @@ use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
 use \EasySwoole\Core\Http\Response;
 use EasySwoole\Core\Utility\File;
+use EasySwoole\Core\Swoole\Process\ProcessManager;
+
 
 Class EasySwooleEvent implements EventInterface {
 
@@ -65,6 +69,14 @@ Class EasySwooleEvent implements EventInterface {
         ));
 
         Di::getInstance()->set('REDIS', Redis::getInstance());
+
+        //注册消费者进程
+        $allNum = 3;
+        for($i=0; $i<$allNum; $i++)
+        {
+            //执行顺序：在EasySwooleEvent的mainServerCreate中注册， Consumer::class继承AbstractProcess，会去执行run方法
+            ProcessManager::getInstance()->addProcess("consumer_{$i}", Consumer::class);
+        }
     }
 
 
