@@ -8,6 +8,8 @@
 
 namespace App\HttpController\Api;
 
+use App\Lib\Upload\Video;
+
 class Upload extends Base
 {
     //POST: http://wudy.easyswoole.cn:8090/api/upload/file
@@ -26,5 +28,13 @@ class Upload extends Base
             'url' => $url
         ];
         return $this->writeJson(200, 'success', $data);
+    }
+
+    public function fileUpload()
+    {
+        $request = $this->request();
+        $obj = new Video($request);
+        $obj->upload();
+
     }
 }

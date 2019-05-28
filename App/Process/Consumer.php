@@ -22,7 +22,7 @@ class Consumer extends AbstractProcess
         $this->addTick(500, function (){
             if(!$this->isRun)
             {
-                var_dump($this->getProcessName().' task run check');
+//                var_dump($this->getProcessName().' task run check');
                 $this->isRun = true;
                 while (true)
                 {
