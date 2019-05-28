@@ -23,7 +23,7 @@ class Video extends Base
         $this->fileExtTypes = [
             'mp4',
             'x-flv'
-        ];;  //方式1
+        ];  //方式1
 
         $this->setFields('video'); //方式2
 

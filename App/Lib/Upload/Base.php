@@ -34,6 +34,7 @@ class Base
     }
 
     public function setFields($value) {
+        var_dump($value);
         $this->fileType = $value;
     }
 
@@ -42,8 +43,6 @@ class Base
         $this->request = $request;
         $files = $this->request->getSwooleRequest()->files;
         $this->type = array_keys($files)[0];
-        print_r($files);
-
     }
 
     public function upload()
