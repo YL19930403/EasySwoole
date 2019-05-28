@@ -30,11 +30,29 @@ class Upload extends Base
         return $this->writeJson(200, 'success', $data);
     }
 
+    /**
+     * 文件上传
+     * @return bool
+     */
     public function fileUpload()
     {
         $request = $this->request();
-        $obj = new Video($request);
-        $obj->upload();
+        try{
+            $obj = new Video($request);
+            $file = $obj->upload();
+        }catch (\Exception $e){
+            return $this->writeJson(1, $e->getMessage(), []);
+        }
+
+        if(empty($file))
+        {
+            return$this->writeJson(1, '上传失败', []);
+        }
+
+        $data = [
+            'url' => $file
+        ];
+        return$this->writeJson(200, 'success', $data);
 
     }
 }

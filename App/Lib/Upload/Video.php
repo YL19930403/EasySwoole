@@ -20,8 +20,13 @@ class Video extends Base
 
     public function __construct($request)
     {
-//        $this->fileType = 'video';  //方式1
-        $this->setFileType('video'); //方式2
+        $this->fileExtTypes = [
+            'mp4',
+            'x-flv'
+        ];;  //方式1
+
+        $this->setFields('video'); //方式2
+
         parent::__construct($request);
     }
 
@@ -29,8 +34,8 @@ class Video extends Base
      * 文件后缀的mediaType
      * @var array
      */
-    public $fileExtTypes = [
-        'mp4',
-        'x-flv'
-    ];
+//    public $fileExtTypes = [
+//        'mp4',
+//        'x-flv'
+//    ];
 }
