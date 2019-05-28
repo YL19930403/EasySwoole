@@ -25,6 +25,8 @@ class Index extends Base
 
     //http://wudy.easyswoole.cn:8090/api/video?age=0
     //http://wudy.easyswoole.cn:8090/api/index/video
+    //http://127.0.0.1:9501/api/index/video
+    //在nginx中配置了反向代理，默认访问webroot/index.html, 如果找不到要访问的文件，那么就代理到http://127.0.0.1:9501
     public function video()
     {
 //        $data = [

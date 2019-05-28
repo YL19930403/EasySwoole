@@ -117,3 +117,5 @@ Stack trace:
 #4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
 #5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
 #6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/]
+19-05-28 14:15:17:Error at file[/Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Http/Message/UploadFile.php] line[44] message:[file_put_contents(/Users/yuliang/EasySwoole/webroot//tmp/swoole.upfile.2wdXOg): failed to open stream: No such file or directory]
+19-05-28 14:16:54:Error at file[/Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Http/Message/UploadFile.php] line[44] message:[file_put_contents(/Users/yuliang/EasySwoole/webroot/tmp/swoole.upfile.isxu9J): failed to open stream: No such file or directory]
