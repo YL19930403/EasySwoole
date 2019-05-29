@@ -10,6 +10,7 @@ namespace App\HttpController\Api;
 
 use App\Lib\Upload\Image;
 use App\Lib\Upload\Video;
+use App\Lib\ClassReflection;
 
 class Upload extends Base
 {
@@ -36,15 +37,25 @@ class Upload extends Base
 
         $files = $request->getSwooleRequest()->files;
         $type = array_keys($files)[0];
-        if ($type == 'image')
+
+        if(empty($type))
         {
-            $obj = "\App\Lib\Upload\Image";
-        }elseif ($type == 'video'){
-            $obj = "\App\Lib\Upload\Video";
+            return $this->writeJson(400, '上传文件不合法');
         }
+
+//        if ($type == 'image')
+//        {
+//            $obj = "\App\Lib\Upload\Image";
+//        }elseif ($type == 'video'){
+//            $obj = "\App\Lib\Upload\Video";
+//        }
+
         try{
-            $obj = new $obj($request);
-            $file = $obj->upload();
+            //反射机制
+            $classObj = new ClassReflection();
+            $classStats = $classObj->uploadClassReflection();
+            $uploadObj = $classObj->initClass($type, $classStats, [$request, $type]);
+            $file = $uploadObj->upload();
         }catch (\Exception $e){
             return $this->writeJson(1, $e->getMessage(), []);
         }

@@ -38,11 +38,15 @@ class Base
         $this->fileType = $value;
     }
 
-    public  function __construct($request)
+    public  function __construct($request, $type='')
     {
-        $this->request = $request;
-        $files = $this->request->getSwooleRequest()->files;
-        $this->type = array_keys($files)[0];
+        if(empty($type))
+        {
+            $this->request = $request;
+            $files = $this->request->getSwooleRequest()->files;
+            $this->type = array_keys($files)[0];
+        }
+        $this->type = $type;
     }
 
     public function upload()
