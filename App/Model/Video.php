@@ -12,11 +12,19 @@ use EasySwoole\Mysqli\TpORM;
 use EasySwoole\Config;
 
 
-class Video extends TpORM
+class Video  extends Base //extends TpORM
 {
+
+    public function __construct()
+    {
+        $this->tableName = 'video';
+        parent::__construct();
+    }
 
     public function getVideoBy($id)
     {
         return $this->where(['id' => 1])->field('*')->find();
     }
+
+
 }

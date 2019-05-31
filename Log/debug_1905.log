@@ -132,3 +132,14 @@ Stack trace:
 19-05-28 20:05:48:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[101] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
 19-05-28 20:05:49:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[101] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
 19-05-29 17:14:13:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Upload.php] line[39] message:[array_keys() expects parameter 1 to be array, null given]
+19-05-31 09:39:27:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[34] message:[array_column() expects parameter 1 to be array, object given]
+19-05-31 09:45:17:Error at file[/Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php] line[115] message:[Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501]. Error: Address already in use[48]. in /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php:115
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(115): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(25): serverStart(Array)
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
+#6 /Users/yuliang/EasySwoole/easyswoole(2): require('/Users/yuliang/...')
+#7 {ma]
