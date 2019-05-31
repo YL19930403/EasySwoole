@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59301ed2-a3a9-416c-a0b5-a144def64fe0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/App/Lib/ClassReflection.php" afterPath="$PROJECT_DIR$/App/Lib/ClassReflection.php" />
-      <change beforePath="$PROJECT_DIR$/App/Lib/Upload/Base.php" afterPath="$PROJECT_DIR$/App/Lib/Upload/Base.php" />
       <change beforePath="$PROJECT_DIR$/Log/debug_1905.log" afterPath="$PROJECT_DIR$/Log/debug_1905.log" />
       <change beforePath="$PROJECT_DIR$/Temp/pid.pid" afterPath="$PROJECT_DIR$/Temp/pid.pid" />
-      <change beforePath="$PROJECT_DIR$/Temp/reload.log" afterPath="$PROJECT_DIR$/Temp/reload.log" />
-      <change beforePath="$PROJECT_DIR$/Temp/swoole.log" afterPath="$PROJECT_DIR$/Temp/swoole.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,11 +17,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Base.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Lib/Upload/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="570">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Autoloader/Autoloader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -52,16 +67,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Base.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Video.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,26 +75,6 @@
               <folding>
                 <element signature="e#126#161#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rules.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Utility/Validate/Rules.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rule.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Utility/Validate/Rule.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -197,6 +182,8 @@
         <option value="$PROJECT_DIR$/App/Lib/Upload/Image.php" />
         <option value="$PROJECT_DIR$/App/HttpController/Api/Upload.php" />
         <option value="$PROJECT_DIR$/App/Lib/Upload/Base.php" />
+        <option value="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Config.php" />
+        <option value="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Autoloader/Autoloader.php" />
       </list>
     </option>
   </component>
@@ -259,6 +246,70 @@
             <path>
               <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aliyun-php-sdk-core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vod" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vod" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Request" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vod" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Request" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="V20170321" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -280,19 +331,6 @@
               <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="2019" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="video" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -301,6 +339,14 @@
               <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="video" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="2019" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="video" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="2019" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="05" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -368,12 +414,12 @@
       <workItem from="1558925165721" duration="26683000" />
       <workItem from="1559094266499" duration="4824000" />
       <workItem from="1559226294948" duration="5722000" />
-      <workItem from="1559306460185" duration="1817000" />
+      <workItem from="1559306460185" duration="3719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76233000" />
+    <option name="totallyTimeSpent" value="78135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
@@ -410,42 +456,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/bin/easyswoole">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nohup.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Swoole/Process/ProcessManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -769,8 +779,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Lib/Upload/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state relative-caret-position="570">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-vod/ChangeLog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/ChangeLog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_defines.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="726" column="9" lean-forward="false" selection-start-line="726" selection-start-column="9" selection-end-line="726" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Autoloader/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding />
         </state>
       </provider>

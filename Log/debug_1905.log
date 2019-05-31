@@ -144,3 +144,4 @@ Stack trace:
 #6 /Users/yuliang/EasySwoole/easyswoole(2): require('/Users/yuliang/...')
 #7 {ma]
 19-05-31 21:03:01:Error at file[/Users/yuliang/EasySwoole/App/Lib/Upload/Base.php] line[58] message:[Undefined property: App\Lib\Upload\Image::$request]
+19-05-31 21:27:13:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Upload.php] line[39] message:[array_keys() expects parameter 1 to be array, null given]
