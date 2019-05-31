@@ -32,15 +32,16 @@ class ClassReflection
         }
 
         $className = $supportedClass[$type];
+        print_r($className);
         //如果$needInstance = false， 则表示静态类访问
-        return $needInstance ? (new \ReflectionClass($className))->newInstanceArgs($param) : $className;
+        return ($needInstance ? (new \ReflectionClass($className))->newInstanceArgs($param) : $className);
 
     }
 
     public function uploadClassReflection()
     {
         return [
-            'image' => '\App\Lib\Upload\Image',
+            'image' => "\App\Lib\Upload\Image",
             'video' => "\App\Lib\Upload\Video",
         ];
     }

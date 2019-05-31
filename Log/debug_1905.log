@@ -143,3 +143,4 @@ Stack trace:
 #5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
 #6 /Users/yuliang/EasySwoole/easyswoole(2): require('/Users/yuliang/...')
 #7 {ma]
+19-05-31 21:03:01:Error at file[/Users/yuliang/EasySwoole/App/Lib/Upload/Base.php] line[58] message:[Undefined property: App\Lib\Upload\Image::$request]

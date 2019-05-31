@@ -34,19 +34,19 @@ class Base
     }
 
     public function setFields($value) {
-        var_dump($value);
         $this->fileType = $value;
     }
 
-    public  function __construct($request, $type='')
+    public  function __construct($request, $type=null)
     {
         if(empty($type))
         {
             $this->request = $request;
             $files = $this->request->getSwooleRequest()->files;
             $this->type = array_keys($files)[0];
+        }else{
+            $this->type = $type;
         }
-        $this->type = $type;
     }
 
     public function upload()
