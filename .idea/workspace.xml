@@ -2,7 +2,153 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59301ed2-a3a9-416c-a0b5-a144def64fe0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Log/debug_1905.log" afterPath="$PROJECT_DIR$/Log/debug_1905.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/App/Lib/AliyunSDK/AliVod.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ini/aliyun" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/.coveralls.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/LICENSE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/README-CN.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/autoload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/build-phar.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/composer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/example.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/phpunit.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/Bucket.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/BucketCors.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/BucketLifecycle.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/BucketLogging.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/BucketReferer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/BucketWebsite.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/Callback.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/Common.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/Config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/Image.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/LiveChannel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/MultipartUpload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/Object.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/RunAll.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/samples/Signature.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Core/MimeTypes.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Core/OssException.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Core/OssUtil.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Http/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Http/RequestCore.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Http/RequestCore_Exception.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Http/ResponseCore.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/BucketInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/BucketListInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/CnameConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/CorsConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/CorsRule.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/GetLiveChannelHistory.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/GetLiveChannelInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/GetLiveChannelStatus.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LifecycleAction.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LifecycleConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LifecycleRule.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/ListMultipartUploadInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/ListPartsInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LiveChannelConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LiveChannelHistory.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LiveChannelInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LiveChannelListInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/LoggingConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/ObjectInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/ObjectListInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/PartInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/PrefixInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/RefererConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/StorageCapacityConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/UploadInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/WebsiteConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Model/XmlConfig.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/OssClient.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/AclResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/AppendResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/BodyResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/CallbackResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/CopyObjectResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/DeleteObjectsResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/ExistResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetCnameResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetCorsResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetLifecycleResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetLiveChannelHistoryResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetLiveChannelInfoResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetLiveChannelStatusResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetLocationResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetLoggingResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetRefererResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetStorageCapacityResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/GetWebsiteResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/HeaderResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/InitiateMultipartUploadResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/ListBucketsResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/ListLiveChannelResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/ListMultipartUploadResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/ListObjectsResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/ListPartsResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/PutLiveChannelResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/PutSetDeleteResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/Result.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/SymlinkResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/src/OSS/Result/UploadPartResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/AclResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/BodyResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/BucketCnameTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/BucketInfoTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/BucketLiveChannelTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/CallbackTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/CnameConfigTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/Common.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/ContentTypeTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/CopyObjectResult.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/CorsConfigTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/ExistResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/GetCorsResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/GetLifecycleResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/GetLoggingResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/GetRefererResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/GetWebsiteResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/HeaderResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/HttpTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/InitiateMultipartUploadResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/LifecycleConfigTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/ListBucketsResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/ListMultipartUploadResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/ListObjectsResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/ListPartsResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/LiveChannelXmlTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/LoggingConfigTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/MimeTypesTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/ObjectAclTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientBucketCorsTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientBucketLifecycleTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientBucketLoggingTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientBucketRefererTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientBucketStorageCapacityTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientBucketTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientBucketWebsiteTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientImageTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientMultipartUploadTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientObjectTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientRestoreObjectTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientSignatureTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssClientTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssExceptionTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/OssUtilTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/PutSetDeleteResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/RefererConfigTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/StorageCapacityTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/SymlinkTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/TestOssClientBase.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/UploadPartResultTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-oss-php-sdk-master/tests/OSS/Tests/WebsiteConfigTest.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Temp/pid.pid" afterPath="$PROJECT_DIR$/Temp/pid.pid" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,94 +161,78 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="EasySwoole" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Lib/Upload/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Config.php">
+      <file leaf-file-name="AliVod.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/AliVod.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Autoloader.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Autoloader/Autoloader.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassReflection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Lib/ClassReflection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Upload.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Video.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+            <state relative-caret-position="258">
+              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
-                <element signature="e#126#161#0#PHP" expanded="true" />
+                <element signature="e#291#324#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="debug_1905.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Log/debug_1905.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="594">
-              <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Lib/Upload/Image.php">
+      <file leaf-file-name="LocationService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Regions/LocationService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="211">
+              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Lib/Upload/Video.php">
+      <file leaf-file-name="AcsRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/AcsRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="228">
+              <caret line="171" column="20" lean-forward="false" selection-start-line="171" selection-start-column="20" selection-end-line="171" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateUploadVideoRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-vod/vod/Request/V20170321/CreateUploadVideoRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="189" column="21" lean-forward="true" selection-start-line="189" selection-start-column="21" selection-end-line="189" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultProfile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Profile/DefaultProfile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="194" column="7" lean-forward="true" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aliyun" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ini/aliyun">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -136,6 +266,7 @@
       <find>$name</find>
       <find>vali</find>
       <find>upload</find>
+      <find>@</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -184,6 +315,9 @@
         <option value="$PROJECT_DIR$/App/Lib/Upload/Base.php" />
         <option value="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Config.php" />
         <option value="$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Autoloader/Autoloader.php" />
+        <option value="$PROJECT_DIR$/App/Lib/AliVod.php" />
+        <option value="$PROJECT_DIR$/ini/aliyun" />
+        <option value="$PROJECT_DIR$/App/Lib/AliyunSDK/AliVod.php" />
       </list>
     </option>
   </component>
@@ -235,7 +369,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,6 +380,19 @@
               <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HttpController" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="HttpController" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
@@ -275,37 +421,8 @@
               <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vod" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vod" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Request" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AliyunSDK" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="aliyun-php-sdk-vod" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vod" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Request" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="V20170321" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aliyun-php-sdk-core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Regions" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
@@ -353,6 +470,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,11 +484,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/App/Lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webroot" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/App/Lib/AliyunSDK" />
+      <recent name="$PROJECT_DIR$/App/Lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -414,28 +533,29 @@
       <workItem from="1558925165721" duration="26683000" />
       <workItem from="1559094266499" duration="4824000" />
       <workItem from="1559226294948" duration="5722000" />
-      <workItem from="1559306460185" duration="3719000" />
+      <workItem from="1559306460185" duration="4336000" />
+      <workItem from="1559355176791" duration="2605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78135000" />
+    <option name="totallyTimeSpent" value="81357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18955651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19170243" sideWeight="0.49438202" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19170243" sideWeight="0.505618" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -456,56 +576,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Swoole/Process/ProcessManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Swoole/Process/AbstractProcess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ini/redis.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/HttpController/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/redis.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ini/upload.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/HttpController/Api/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -605,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Log/debug_1905.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="594">
+        <state relative-caret-position="2175">
           <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
         </state>
       </provider>
@@ -740,16 +808,6 @@
         <state relative-caret-position="255">
           <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding>
-            <element signature="e#126#161#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,7 +821,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Lib/ClassReflection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
+        <state relative-caret-position="165">
           <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
         </state>
@@ -771,16 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
+        <state relative-caret-position="750">
           <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Upload/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -789,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,6 +853,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="726" column="9" lean-forward="false" selection-start-line="726" selection-start-column="9" selection-end-line="726" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Autoloader/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -817,11 +872,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Autoloader/Autoloader.php">
+    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/bin/easyswoole">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="75">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Profile/DefaultProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="194" column="7" lean-forward="true" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#126#161#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ini/aliyun">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Upload/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-vod/vod/Request/V20170321/CreateUploadVideoRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="189" column="21" lean-forward="true" selection-start-line="189" selection-start-column="21" selection-end-line="189" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/AcsRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="171" column="20" lean-forward="false" selection-start-line="171" selection-start-column="20" selection-end-line="171" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/aliyun-php-sdk-core/Regions/LocationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/AliyunSDK/AliVod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="e#291#324#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
