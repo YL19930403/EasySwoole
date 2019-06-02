@@ -50,6 +50,7 @@ class Video extends Base
 
     /**
      * http://wudy.easyswoole.cn:8090/api/video/apilist?cat_id=0&page_no=1&page_size=2
+     * 获取视频列表  -- 第二套方案:静态化api
      * @return bool
      */
     public function apiList()

@@ -9,6 +9,7 @@
 namespace App\Lib\ApiCache;
 
 use App\Model\Video as VideoModel;
+use EasySwoole\Core\Component\Cache\Cache;
 
 class Video
 {
@@ -49,8 +50,11 @@ class Video
             }
 
             $filePath = $json_path.'/'.$catId.'.json';
-//            echo $filePath;
+            //存入json文件
             $flag = file_put_contents($filePath, json_encode($data, JSON_UNESCAPED_UNICODE));
+
+//            Cache::getInstance()->set('index_video_cat_id', );
+
             if(!$flag)
             {
                 //TODO:报警：短信、邮件

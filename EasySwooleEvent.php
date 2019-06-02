@@ -18,6 +18,7 @@ use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
 use \EasySwoole\Core\Http\Response;
 use EasySwoole\Core\Utility\File;
+use EasySwoole\Core\Swoole\Time\Timer;
 use  App\Lib\ApiCache\Video as VideoCache;
 use EasySwoole\Core\Component\Crontab\CronTab;
 use EasySwoole\Core\Swoole\Process\ProcessManager;
@@ -82,12 +83,25 @@ Class EasySwooleEvent implements EventInterface {
 
         //Crontab定时器
         $cacheObj = new VideoCache();
-        CronTab::getInstance()->addRule('crobtab_wudy_test1', '*/1 * * * *', function () use ($cacheObj) {
-            $cacheObj->setIndexVideo();
-        });
+//        CronTab::getInstance()->addRule('crobtab_wudy_test1', '*/1 * * * *', function () use ($cacheObj) {
+//            $cacheObj->setIndexVideo();
+//        });
 //            ->addRule('crobtab_wudy_test2', '*/1 * * * *', function (){
 //            var_dump('crobtab_wudy_test2');
 //        })
+
+
+        //Swoole定时器
+        $register->add(EventRegister::onWorkerStart, function (\swoole_server $server, $workId) use ($cacheObj) {
+            if($workId == 0)  //work进程由多个，只使用workId=0的进程
+            {
+                Timer::loop(1000*20, function () use ($cacheObj){
+                    $cacheObj->setIndexVideo();
+                });
+            }
+        });
+
+
 
     }
 
