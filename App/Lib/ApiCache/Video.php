@@ -51,10 +51,9 @@ class Video
 
             $filePath = $json_path.'/'.$catId.'.json';
             //存入json文件
-            $flag = file_put_contents($filePath, json_encode($data, JSON_UNESCAPED_UNICODE));
+//            $flag = file_put_contents($filePath, json_encode($data, JSON_UNESCAPED_UNICODE));
 
-//            Cache::getInstance()->set('index_video_cat_id', );
-
+            $flag = Cache::getInstance()->set('index_video_cat_id_'.$catId, $data);
             if(!$flag)
             {
                 //TODO:报警：短信、邮件

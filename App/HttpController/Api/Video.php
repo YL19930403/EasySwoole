@@ -13,6 +13,7 @@ use EasySwoole\Core\Component\Logger;
 use EasySwoole\Core\Utility\Validate\Rule;
 use EasySwoole\Core\Utility\Validate\Rules;
 use EasySwoole\Core\Http\Message\Status;
+use EasySwoole\Core\Component\Cache\Cache;
 
 class Video extends Base
 {
@@ -57,8 +58,14 @@ class Video extends Base
     {
         $catId = empty($this->params['cat_id']) ? 0: intval($this->params['cat_id']); //0:查询所有的cat_id
         $videoFile = EASYSWOOLE_ROOT . '/webroot/json/' . $catId. '.json';
-        $videoData = is_file($videoFile) ? file_get_contents($videoFile):[];
-        $videoData = empty($videoData) ? []: json_decode($videoData, true);
+        //读取json文件获取数据
+//        $videoData = is_file($videoFile) ? file_get_contents($videoFile):[];
+//        $videoData = empty($videoData) ? []: json_decode($videoData, true);
+
+        //读取Swoole Table
+        $videoData = Cache::getInstance()->get('index_video_cat_id_'.$catId);
+        $videoData = !$videoData ? [] : $videoData;
+
         $count = count($videoData);
         return $this->writeJson(Status::CODE_OK, 'success', $this->getPagingList($count, $videoData));
     }

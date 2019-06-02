@@ -26,7 +26,7 @@ return [
     'LOG_DIR'=>null,//若不配置，则默认框架初始化
     'EASY_CACHE'=>[
         'PROCESS_NUM'=>1,//若不希望开启，则设置为0
-        'PERSISTENT_TIME'=>0//如果需要定时数据落地，请设置对应的时间周期，单位为秒
+        'PERSISTENT_TIME'=>1//如果需要定时数据落地，请设置对应的时间周期，单位为秒
     ],
     'CLUSTER'=>[
         'enable'=>false,
