@@ -11,6 +11,8 @@ namespace App\HttpController\Api;
 use App\Model\Video;
 use EasySwoole\Core\Component\Di;
 use App\Lib\Redis\Redis;
+use EasySwoole\Core\Http\Message\Status;
+use App\Lib\AliyunSDK\AliVod;
 use EasySwoole\Core\Component\Trigger;
 
 class Index extends Base
@@ -88,4 +90,72 @@ class Index extends Base
         $params = $this->request()->getRequestParam();
         Redis::getInstance()->rPush('redis_test', $params['age']);
     }
+
+    /*
+     * 测试阿里云视频上传
+     */
+    public function testAliyun()
+    {
+        $vodObj = new AliVod();
+        $title = 'test_aliyun_upload';
+        $videoName = '1.mp4';
+        $result = $vodObj->createUploadVideo($title, $videoName);
+
+//        [VideoId] => 09f05e4911784dab9c9dbf3fc5bc13cb
+//        [RequestId] => 29D9886A-B7BB-4152-B482-2DEC5BCB9B60
+//        [UploadAddress] => base_64
+//        [UploadAuth] => base_64
+
+        $uploadAddress = json_decode(base64_decode($result->UploadAddress), true);
+        $uploadPath = json_decode(base64_decode($result->UploadAuth), true);
+//        print_r($uploadAddress);
+//        Array
+//        (
+//            [Endpoint] => https://oss-cn-shanghai.aliyuncs.com
+//            [Bucket] => outin-feab835d83ab11e9993d00163e00b174
+//            [FileName] => sv/42058ff9-16b11f67415/42058ff9-16b11f67415.mp4
+//        )
+
+//        print_r($uploadPath);
+//        Array
+//        (
+//            [SecurityToken] => CAIS0AR1q6Ft5B2yfSjIr4j4O8LEiJ1CgpWCTxPc3UU9VOdIvYfMtTz2IH9IdHVoAO8fvvU0m2tY7PsZlrUqFMUcHRObNJchsckKqF/6JpfZv8u84YADi5CjQbo+1ucimZ28Wf7waf+AUBXGCTmd5MMYo9bTcTGlQCZuW//toJV7b9MRcxClZD5dfrl/LRdjr8lo1xGzUPG2KUzSn3b3BkhlsRYe72Rk8vaHxdaAzRDcgVbmqJcSvJ+jC4C8Ys9gG519XtypvopxbbGT8CNZ5z9A9qp9kM49/izc7P6QH35b4RiNL8/Z7tQNXwhiffobHa9YrfHgmNhlvvDSj43t1ytVOeZcX0akQ5u7ku7ZHP+oLt8jaYvjP3PE3rLpMYLu4T48ZXUSODtDYcZDUHhrEk4RUjXdI6Of8UrWSQC7Wsr217otg7Fyyk3s8MaHAkWLX7SB2DwEB4c4aEokVW4RxnezW6UBaRBpbld7Bq6cV5lOdBRZoK+KzQrJTX9Ez2pLmuD6e/LOs7oDVJ37WZtKyuh4Y49d4U8rVEjPQqiykT0pFgpfTK1RzbPmNLKm9baB25/zW+PdDe0dsVgoIFKOpiGWG3RLNn+ztJ9xbkeE+sKUwqHF+cM7TQd+vdlVVFiIIIc89FA+u/LstBnLqOW6DSzt5XR/uPugptgRuRo8I6372bTJ42WG5Ub9O/dpxJ3lP0R0WgmydnBDx/Sfu2kKvRhpkRvvZEpPtwzIij/gLZZEiazRmyhefo5XmPXFTQmn8l5pAMmy/60xXudvbE2R0EQDY9YCGoABUwTIMi9PjccPZ6DPyv8nhgAHiSxa+BlFjUxMwWy43I/eMtW+slsadyY/nh6zTIZi1bu3bUcok6v05sJTez8bJEZG9rQohd1bDXOQoOaaDEUVxdoUAGqvWMuT9KpValNlv/bbO9Xdsp7O0YbP8zQktkD+MJETJIkQuLEVwMW70wk=
+//            [AccessKeyId] => STS.NKMpxpeBc5WiM5m9EhXhdRBgW
+//            [ExpireUTCTime] => 2019-06-01T08:34:52Z
+//            [AccessKeySecret] => EbnxpncHCw3cSSdgv1fbxnDZe47HejNznyfAR1SJvKnK
+//            [Expiration] => 3600
+//            [Region] => cn-shanghai
+//        )
+        $videoFile = '/Users/yuliang/EasySwoole/webroot/video/2019/06/e69c56cc24d25a1c.mp4';
+        $vodObj->initOssClient($uploadPath, $uploadAddress);
+        $res = $vodObj->uploadLocalFile($uploadAddress, $videoFile);
+        print_r($res);
+    }
+
+    //http://wudy.easyswoole.cn:8090/api/index/list
+
+    /**
+     * 获取视频列表
+     * @return bool
+     */
+    public function list()
+    {
+        $param = $this->request()->getRequestParam();
+        $page_size = $param['page_size'] ?? 20;
+        $page_no = $param['page_no'] ?? 1;
+        $condition = [];
+        if(!empty($param['cat_id']))
+        {
+            $condition['cat_id'] = intval($param['cat_id']);
+        }
+        try{
+            $videoModel = new Video();
+            $data = $videoModel->getVideoList($page_no,$page_size, $condition);
+        }catch (\Exception $e){
+            return $this->writeJson(Status::CODE_BAD_REQUEST, $e->getMessage());
+        }
+        return $this->writeJson(Status::CODE_OK, 'success', $data);
+    }
+
+
 }

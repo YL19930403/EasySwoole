@@ -16,7 +16,7 @@ use EasySwoole\Core\Component\Di;
  */
 class Base
 {
-    private $db = '';
+    public $db = '';
 
     public function __set($name, $value)
     {
