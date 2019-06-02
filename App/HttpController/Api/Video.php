@@ -16,6 +16,53 @@ use EasySwoole\Core\Http\Message\Status;
 
 class Video extends Base
 {
+    //http://wudy.easyswoole.cn:8090/api/video/list
+    /**
+     * 获取视频列表  -- 第一套方案：Mysql
+     * @return bool
+     */
+    public function list()
+    {
+        $condition = [];
+        if(!empty($this->params['cat_id']))
+        {
+            $condition['cat_id'] = intval($this->params['cat_id']);
+        }
+        try{
+            $videoModel = new VideoModel();
+            $data = $videoModel->getVideoList($this->params['page_no'],$this->params['page_size'], $condition);
+        }catch (\Exception $e){
+
+            return $this->writeJson(Status::CODE_BAD_REQUEST, $e->getMessage());
+        }
+
+        if(!empty($data['list']))
+        {
+            foreach ($data['list'] as &$list)
+            {
+                $list['create_time'] = date('Y-m-d h:i:s', $list['create_time']);
+                $list['video_duration'] = gmstrftime("%H:%M:%S", $list['video_duration']);
+            }
+        }
+
+        return $this->writeJson(Status::CODE_OK, 'success', $data);
+    }
+
+    /**
+     * http://wudy.easyswoole.cn:8090/api/video/apilist?cat_id=0&page_no=1&page_size=2
+     * @return bool
+     */
+    public function apiList()
+    {
+        $catId = empty($this->params['cat_id']) ? 0: intval($this->params['cat_id']); //0:查询所有的cat_id
+        $videoFile = EASYSWOOLE_ROOT . '/webroot/json/' . $catId. '.json';
+        $videoData = is_file($videoFile) ? file_get_contents($videoFile):[];
+        $videoData = empty($videoData) ? []: json_decode($videoData, true);
+        $count = count($videoData);
+        return $this->writeJson(Status::CODE_OK, 'success', $this->getPagingList($count, $videoData));
+    }
+
+
     public function add()
     {
         $param = $this->request()->getRequestParam();

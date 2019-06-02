@@ -18,6 +18,8 @@ use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
 use \EasySwoole\Core\Http\Response;
 use EasySwoole\Core\Utility\File;
+use  App\Lib\ApiCache\Video as VideoCache;
+use EasySwoole\Core\Component\Crontab\CronTab;
 use EasySwoole\Core\Swoole\Process\ProcessManager;
 
 
@@ -77,6 +79,16 @@ Class EasySwooleEvent implements EventInterface {
             //执行顺序：在EasySwooleEvent的mainServerCreate中注册， Consumer::class继承AbstractProcess，会去执行run方法
             ProcessManager::getInstance()->addProcess("consumer_{$i}", Consumer::class);
         }
+
+        //Crontab定时器
+        $cacheObj = new VideoCache();
+        CronTab::getInstance()->addRule('crobtab_wudy_test1', '*/1 * * * *', function () use ($cacheObj) {
+            $cacheObj->setIndexVideo();
+        });
+//            ->addRule('crobtab_wudy_test2', '*/1 * * * *', function (){
+//            var_dump('crobtab_wudy_test2');
+//        })
+
     }
 
 

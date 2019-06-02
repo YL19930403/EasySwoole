@@ -132,30 +132,5 @@ class Index extends Base
         print_r($res);
     }
 
-    //http://wudy.easyswoole.cn:8090/api/index/list
-
-    /**
-     * 获取视频列表
-     * @return bool
-     */
-    public function list()
-    {
-        $param = $this->request()->getRequestParam();
-        $page_size = $param['page_size'] ?? 20;
-        $page_no = $param['page_no'] ?? 1;
-        $condition = [];
-        if(!empty($param['cat_id']))
-        {
-            $condition['cat_id'] = intval($param['cat_id']);
-        }
-        try{
-            $videoModel = new Video();
-            $data = $videoModel->getVideoList($page_no,$page_size, $condition);
-        }catch (\Exception $e){
-            return $this->writeJson(Status::CODE_BAD_REQUEST, $e->getMessage());
-        }
-        return $this->writeJson(Status::CODE_OK, 'success', $data);
-    }
-
 
 }

@@ -60,5 +60,23 @@ class Video  extends Base //extends TpORM
         return $data;
     }
 
+    public function getCacheVideoList($page_size=1000, array $condition=[])
+    {
+        if(!empty($page_size))
+        {
+            $this->db->pageLimit = $page_size;
+        }
+
+        if(!empty($condition['cat_id']))
+        {
+            $this->db->where('cat_id', $condition['cat_id']);
+        }
+        $this->db->where('status', \Yaconf::get("status.normal"));
+        $this->db->orderBy('id', 'desc');
+        $result = $this->db->paginate($this->tableName, 1, $this->fields);
+//        echo $this->db->getLastQuery();
+        return $result;
+    }
+
 
 }

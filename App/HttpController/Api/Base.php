@@ -20,7 +20,7 @@ use EasySwoole\Core\Http\Response;
 class Base extends Controller
 {
 
-    private $params = [];
+    public $params = [];
 
     /**
      * Api模块下的基础类库
@@ -47,12 +47,35 @@ class Base extends Controller
         return parent::onRequest($action);
     }
 
+    /**
+     * 获取请求参数
+     */
     private function getParams()
     {
         $params = $this->request()->getRequestParam();
         $params['page_no'] = empty($params['page_no']) ? \Yaconf::get("page.page_no") : intval($params['page_no']);
         $params['page_size'] = empty($params['page_size']) ? \Yaconf::get("page.page_size") : intval($params['page_size']);
+        $params['from'] = ( $params['page_no'] - 1 ) * $params['page_size'];  //切片json数据时需要
         $this->params = $params;
+    }
+
+    /**
+     * 获取分页
+     * @param int $count
+     * @param array $data
+     * @return array
+     */
+    public function getPagingList($count=0, array $data=[])
+    {
+        $totalPage = ceil($count / $this->params['page_size']);
+
+        $videoSpliceList = array_splice($data, $this->params['from'], $this->params['page_size']);
+        return [
+            'total_page' => $totalPage,
+            'page_size' =>  $this->params['page_size'],
+            'count' => $count,
+            'lists' => $videoSpliceList
+        ];
     }
 
     public function onException(\Throwable $throwable, $actionName): void
