@@ -310,3 +310,18 @@ Stack trace:
 #4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
 #5 {main}
   thrown]
+19-06-03 23:33:07:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[77] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-03 23:33:09:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[77] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-03 23:35:25:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[77] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-03 23:35:26:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[77] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-03 23:37:18:Exception at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[88] message:[read error on connection to 127.0.0.1:6379]
+19-06-03 23:47:33:Exception at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[88] message:[read error on connection to 127.0.0.1:6379]
+19-06-07 08:31:17:Exception at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[88] message:[read error on connection to 127.0.0.1:6379]
+19-06-07 08:44:01:Exception at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[88] message:[read error on connection to 127.0.0.1:6379]
+19-06-07 08:56:28:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[77] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-07 08:57:06:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[77] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-07 08:57:13:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[78] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-07 08:57:15:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[78] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-07 08:58:11:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[77] message:[count(): Parameter must be an array or an object that implements Countable]
+19-06-08 10:48:48:Error at file[/Users/yuliang/EasySwoole/vendor/joshcam/mysqli-database-class/MysqliDb.php] line[1878] message:[Array to string conversion]
+19-06-08 10:49:12:Error at file[/Users/yuliang/EasySwoole/vendor/joshcam/mysqli-database-class/MysqliDb.php] line[1878] message:[Array to string conversion]

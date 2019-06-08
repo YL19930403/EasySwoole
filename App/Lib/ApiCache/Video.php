@@ -9,7 +9,9 @@
 namespace App\Lib\ApiCache;
 
 use App\Model\Video as VideoModel;
+use EasySwoole\Core\Component\Di;
 use EasySwoole\Core\Component\Cache\Cache;
+use function PHPSTORM_META\type;
 
 class Video
 {
@@ -43,21 +45,88 @@ class Video
             }
 
             //写入json文件
-            $json_path = EASYSWOOLE_ROOT.'/webroot/json';
-            if(!is_dir($json_path))
-            {
-                mkdir($json_path, 0777, true);
-            }
-
-            $filePath = $json_path.'/'.$catId.'.json';
+//            $filePath = $json_path.'/'.$catId.'.json';
             //存入json文件
 //            $flag = file_put_contents($filePath, json_encode($data, JSON_UNESCAPED_UNICODE));
 
-            $flag = Cache::getInstance()->set('index_video_cat_id_'.$catId, $data);
+            //存入Swoole Table
+//            $flag = Cache::getInstance()->set($this->getCatIdKey($catId), $data);
+
+//            $redisDb = Di::getInstance()->get('REDIS');
+//            $flag = $redisDb->set($this->getCatIdKey($catId), json_encode($data, JSON_UNESCAPED_UNICODE));
+
+            $cacheType = \Yaconf::get('base.cacheType');
+            switch ($cacheType){
+                case 'file':    //Json文件存储
+                    $flag = file_put_contents($this->getStorePath($catId), json_encode($data, JSON_UNESCAPED_UNICODE));
+                    break;
+                case 'table':   //Swoole Table
+                    $flag = Cache::getInstance()->set($this->getCatIdKey($catId), $data);
+                    break;
+                case 'redis':
+                    $redisDb = Di::getInstance()->get('REDIS');
+                    $flag = $redisDb->set($this->getCatIdKey($catId), $data);
+                    break;
+                default:
+                    throw new \Exception('存储引擎错误');
+                    break;
+            }
+
             if(!$flag)
             {
                 //TODO:报警：短信、邮件
             }
         }
+    }
+
+
+    public function getCacheList($catId=0)
+    {
+        $cacheType = \Yaconf::get('base.cacheType');
+        switch ($cacheType){
+            case 'file':
+                $videoData = is_file($this->getStorePath($catId)) ? file_get_contents($this->getStorePath($catId)):[];
+                $videoData = empty($videoData) ? []: json_decode($videoData, true);
+                break;
+            case 'table':
+                $videoData = Cache::getInstance()->get($this->getCatIdKey($catId));
+                $videoData = !$videoData ? [] : $videoData;
+                break;
+            case 'redis':
+                $redisDb = Di::getInstance()->get('REDIS');
+                $key = $this->getCatIdKey($catId);
+                $videoData = $redisDb->get($key);
+                $videoData = empty($videoData) ? [] : json_decode($videoData, true);
+                break;
+            default:
+                throw new \Exception('存储引擎错误');
+                break;
+        }
+        return $videoData;
+    }
+
+    /**
+     * 获取json文件路径
+     * @param int $catId
+     * @return string
+     */
+    public function getStorePath($catId = 0)
+    {
+        $filePath =  EASYSWOOLE_ROOT.'/webroot/json';
+        if(!is_dir($filePath))
+        {
+            mkdir($filePath, 0777, true);
+        }
+        return $filePath . '/'.$catId.'.json';
+    }
+
+    /**
+     * 获取存储key
+     * @param int $catId
+     * @return string
+     */
+    public function getCatIdKey($catId = 0)
+    {
+        return 'index_video_cat_id_'.$catId;
     }
 }

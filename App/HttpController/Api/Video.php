@@ -10,13 +10,45 @@ namespace App\HttpController\Api;
 
 use \App\Model\Video as VideoModel;
 use EasySwoole\Core\Component\Logger;
+use EasySwoole\Core\Swoole\Task\TaskManager;
 use EasySwoole\Core\Utility\Validate\Rule;
 use EasySwoole\Core\Utility\Validate\Rules;
 use EasySwoole\Core\Http\Message\Status;
+use EasySwoole\Core\Component\Di;
 use EasySwoole\Core\Component\Cache\Cache;
+use App\Lib\ApiCache\Video as VideoCache;
 
 class Video extends Base
 {
+
+    /**
+     * 视频详情
+     * @return bool
+     */
+    public function getVideoDetail()
+    {
+        $id = intval($this->params['id']);
+        if(empty($id))
+        {
+            return $this->writeJson(Status::CODE_BAD_REQUEST, '请求不合法');
+        }
+
+        $mysqlDb = Di::getInstance()->get('MYSQL');
+        $video = $mysqlDb->where('id', $id)->getOne('video', '*');
+        if(empty($video) || $video['status'] != \Yaconf::get('status.normal'))
+        {
+            return $this->writeJson(Status::CODE_BAD_REQUEST, '该视频不存在');
+        }
+
+        $video['video_duration'] = gmstrftime("%H:%M:%S", $video['video_duration']);
+        //播放数统计逻辑
+        TaskManager::async(function () use ($id){
+            Di::getInstance()->get('REDIS')->zinCrBy(\Yaconf::get('redis.video_play_key'), 1, $id);
+        });
+
+        return $this->writeJson(Status::CODE_OK, 'OK', $video);
+    }
+
     //http://wudy.easyswoole.cn:8090/api/video/list
     /**
      * 获取视频列表  -- 第一套方案：Mysql
@@ -63,9 +95,16 @@ class Video extends Base
 //        $videoData = empty($videoData) ? []: json_decode($videoData, true);
 
         //读取Swoole Table
-        $videoData = Cache::getInstance()->get('index_video_cat_id_'.$catId);
-        $videoData = !$videoData ? [] : $videoData;
+//        $videoData = Cache::getInstance()->get('index_video_cat_id_'.$catId);
+//        $videoData = !$videoData ? [] : $videoData;
 
+        //读取redis
+        $videoCache = (new VideoCache());
+        try{
+            $videoData = $videoCache->getCacheList($catId);
+        }catch (\Exception $ex){
+            return $this->writeJson(Status::CODE_BAD_REQUEST, $ex->getMessage());
+        }
         $count = count($videoData);
         return $this->writeJson(Status::CODE_OK, 'success', $this->getPagingList($count, $videoData));
     }

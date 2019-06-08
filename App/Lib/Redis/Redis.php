@@ -142,5 +142,20 @@ class Redis
         return $this->redis->rPush($key, $value);
     }
 
+    /**
+     * 有序集合中对指定成员的分数加上增量 increment
+     * @param $key
+     * @param $increment
+     * @param $member
+     * @return bool|float
+     */
+    public function zinCrBy($key, $increment, $member)
+    {
+        if(empty($key) || empty($member))
+        {
+            return false;
+        }
+        return $this->redis->zincrby($key, $increment, $member);
+    }
 
 }

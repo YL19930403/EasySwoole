@@ -95,7 +95,7 @@ Class EasySwooleEvent implements EventInterface {
         $register->add(EventRegister::onWorkerStart, function (\swoole_server $server, $workId) use ($cacheObj) {
             if($workId == 0)  //work进程由多个，只使用workId=0的进程
             {
-                Timer::loop(1000*2, function () use ($cacheObj){
+                Timer::loop(1000*6, function () use ($cacheObj){
                     $cacheObj->setIndexVideo();
                 });
             }
