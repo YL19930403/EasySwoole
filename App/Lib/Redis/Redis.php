@@ -45,6 +45,7 @@ class Redis
         }
     }
 
+
     /**
      * 在类内部调用本类当中的一个不可访问(如果是本类中，那就只能是不存在才不可访问，
      * 如果是在本类外不可访问还可能是没有访问权限)的方法时，不管是对象方式，还是静态方式，都只能触发__call()方法
@@ -53,7 +54,7 @@ class Redis
      */
     public function __call($name, $arguments)
     {
-        // TODO: Implement __call() method.
+        return $this->redis->$name(...$arguments);
     }
 
     /**
@@ -156,6 +157,47 @@ class Redis
             return false;
         }
         return $this->redis->zincrby($key, $increment, $member);
+    }
+
+    /**
+     * 返回有序集合中指定成员的排名，有序集成员按分数值递减(从大到小)排序
+     * @param $key
+     * @param int $start
+     * @param int $stop
+     * @param bool $type
+     * @return array|bool
+     */
+    public function zRevRange111($key, $start=0, $stop=-1, $type=true)
+    {
+        if(empty($key))
+        {
+            return false;
+        }
+        return $this->redis->zrevrange($key, $start, $stop, $type);
+    }
+
+    /**
+     * 计算给定的一个或多个有序集的并集,并将该并集(结果集)储存到$Output
+     * @param $Output
+     * @param array $ZSetKeys
+     * @param array $Weights
+     * @param string $aggregateFunction
+     * @return bool|int
+     */
+    public function zUnionStore222($Output, array $ZSetKeys=[], array $Weights = [], $aggregateFunction='SUM')
+    {
+       if(empty($Output) || empty($ZSetKeys) )
+       {
+            return false;
+       }
+
+       // ZSetKeys 与  Weights必须保持一致
+       if(count($ZSetKeys) !== count($Weights))
+       {
+            return false;
+       }
+
+       return $this->redis->zUnion($Output, $ZSetKeys, $Weights, $aggregateFunction);
     }
 
 }

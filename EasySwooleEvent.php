@@ -75,11 +75,11 @@ Class EasySwooleEvent implements EventInterface {
 
         //注册消费者进程
         $allNum = 3;
-        for($i=0; $i<$allNum; $i++)
-        {
-            //执行顺序：在EasySwooleEvent的mainServerCreate中注册， Consumer::class继承AbstractProcess，会去执行run方法
-            ProcessManager::getInstance()->addProcess("consumer_{$i}", Consumer::class);
-        }
+//        for($i=0; $i<$allNum; $i++)
+//        {
+//            //执行顺序：在EasySwooleEvent的mainServerCreate中注册， Consumer::class继承AbstractProcess，会去执行run方法
+//            ProcessManager::getInstance()->addProcess("consumer_{$i}", Consumer::class);
+//        }
 
         //Crontab定时器
         $cacheObj = new VideoCache();
@@ -92,14 +92,14 @@ Class EasySwooleEvent implements EventInterface {
 
 
         //Swoole定时器
-        $register->add(EventRegister::onWorkerStart, function (\swoole_server $server, $workId) use ($cacheObj) {
-            if($workId == 0)  //work进程由多个，只使用workId=0的进程
-            {
-                Timer::loop(1000*6, function () use ($cacheObj){
-                    $cacheObj->setIndexVideo();
-                });
-            }
-        });
+//        $register->add(EventRegister::onWorkerStart, function (\swoole_server $server, $workId) use ($cacheObj) {
+//            if($workId == 0)  //work进程由多个，只使用workId=0的进程
+//            {
+//                Timer::loop(1000*6, function () use ($cacheObj){
+//                    $cacheObj->setIndexVideo();
+//                });
+//            }
+//        });
     }
 
     public static function onRequest(Request $request,Response $response): void

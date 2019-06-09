@@ -28,6 +28,7 @@ class Video extends Base
     public function getVideoDetail()
     {
         $id = intval($this->params['id']);
+
         if(empty($id))
         {
             return $this->writeJson(Status::CODE_BAD_REQUEST, '请求不合法');
@@ -41,12 +42,42 @@ class Video extends Base
         }
 
         $video['video_duration'] = gmstrftime("%H:%M:%S", $video['video_duration']);
+
+        //统计一周排行榜
+        $weekKey = $this->params['weekKey'];  //20190608, 20190607, 20190606
+
         //播放数统计逻辑
-        TaskManager::async(function () use ($id){
-            Di::getInstance()->get('REDIS')->zinCrBy(\Yaconf::get('redis.video_play_key'), 1, $id);
+        TaskManager::async(function () use ($id, $weekKey){
+//            Di::getInstance()->get('REDIS')->zinCrBy(\Yaconf::get('redis.video_play_key'), 1, $id);
+
+            Di::getInstance()->get('REDIS')->zinCrBy($weekKey, 1, $id);
         });
 
         return $this->writeJson(Status::CODE_OK, 'OK', $video);
+    }
+
+
+    /**
+     * 周排行榜
+     * @return bool
+     */
+    public function rank()
+    {
+//        $result = Di::getInstance()->get('REDIS')->zRevRange(\Yaconf::get('redis.video_play_key'), 0, -1);
+//        $result = Di::getInstance()->get('REDIS')->zRevRange($weekKey, 0, -1, true);
+
+        $ZSetKeys = [];
+        $Weights = [];
+        for ($i=1; $i<=7; $i++){
+            $ZSetKeys[] = date('Ymd', strtotime("-$i days"));
+            $Weights[] = 1;
+        }
+        $result = Di::getInstance()->get('REDIS')->zUnionStore(\Yaconf::get('redis.week_range_key'), $ZSetKeys, $Weights);
+        if($result)
+        {
+            $result = Di::getInstance()->get('REDIS')->zRevRange(\Yaconf::get('redis.week_range_key'), 0, -1, true);
+        }
+        return $this->writeJson(200, 'success', $result);
     }
 
     //http://wudy.easyswoole.cn:8090/api/video/list
