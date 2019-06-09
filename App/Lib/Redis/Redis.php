@@ -150,7 +150,7 @@ class Redis
      * @param $member
      * @return bool|float
      */
-    public function zinCrBy($key, $increment, $member)
+    public function zIncrBy($key, $increment, $member)
     {
         if(empty($key) || empty($member))
         {

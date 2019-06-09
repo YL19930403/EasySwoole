@@ -10,6 +10,7 @@ namespace App\Process;
 
 use Swoole\Process;
 use App\Lib\Redis\Redis;
+use  App\Lib\AliyunSDK\Sms;
 use EasySwoole\Core\Component\Logger;
 use EasySwoole\Core\Swoole\Process\AbstractProcess;
 
@@ -19,7 +20,7 @@ class Consumer extends AbstractProcess
 
     public function run(Process $process)
     {
-        $this->addTick(500, function (){
+        $this->addTick(5000, function (){
             if(!$this->isRun)
             {
 //                var_dump($this->getProcessName().' task run check');
@@ -32,6 +33,13 @@ class Consumer extends AbstractProcess
                         {
                             //发送邮件、或者短信、或者写日志
                             Logger::getInstance()->log($this->getProcessName() . "---" . $task);
+
+                            $authCodeMT = mt_rand(100000,999999);
+                            $result = Sms::sendSms($task, $authCodeMT);
+                            if($result['Code'] != 'OK')
+                            {
+                                Logger::getInstance()->log('验证码发送失败'. json_encode($result, JSON_UNESCAPED_UNICODE));
+                            }
                         }else{
                             break;
                         }

@@ -75,11 +75,11 @@ Class EasySwooleEvent implements EventInterface {
 
         //注册消费者进程
         $allNum = 3;
-//        for($i=0; $i<$allNum; $i++)
-//        {
-//            //执行顺序：在EasySwooleEvent的mainServerCreate中注册， Consumer::class继承AbstractProcess，会去执行run方法
-//            ProcessManager::getInstance()->addProcess("consumer_{$i}", Consumer::class);
-//        }
+        for($i=0; $i<$allNum; $i++)
+        {
+            //执行顺序：在EasySwooleEvent的mainServerCreate中注册， Consumer::class继承AbstractProcess，会去执行run方法
+            ProcessManager::getInstance()->addProcess("consumer_{$i}", Consumer::class);
+        }
 
         //Crontab定时器
         $cacheObj = new VideoCache();
