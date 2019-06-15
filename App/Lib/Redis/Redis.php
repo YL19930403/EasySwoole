@@ -45,12 +45,12 @@ class Redis
         }
     }
 
-
     /**
      * 在类内部调用本类当中的一个不可访问(如果是本类中，那就只能是不存在才不可访问，
      * 如果是在本类外不可访问还可能是没有访问权限)的方法时，不管是对象方式，还是静态方式，都只能触发__call()方法
      * @param $name
      * @param $arguments
+     * @return mixed
      */
     public function __call($name, $arguments)
     {
