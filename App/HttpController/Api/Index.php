@@ -95,7 +95,6 @@ class Index extends Base
     //测试elasticsearch
     public function testEs()
     {
-
         $host = \Yaconf::get('es.host');
         $params = [
             "index" => "video",
@@ -109,11 +108,13 @@ class Index extends Base
                 ],
             ],
         ];
-        $builder = ClientBuilder::create();
-        $client = $builder->setHosts([$host[1]])->build();
+//        $builder = ClientBuilder::create();
+//        $client = $builder->setHosts([$host[1]])->build();
 //        $result = $client->get($params);
-        $result = $client->search($params);
-        print_r(array_column($result, '_source'));
+
+        $esClient = Di::getInstance()->get("ES");
+
+        $result = $esClient->search($params);
 
         return $this->writeJson(Status::CODE_OK, 'success', $result);
     }

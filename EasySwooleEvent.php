@@ -17,6 +17,7 @@ use \EasySwoole\Core\Swoole\ServerManager;
 use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
 use \EasySwoole\Core\Http\Response;
+use App\Lib\ES\ElasticSearch;
 use EasySwoole\Core\Utility\File;
 use EasySwoole\Core\Swoole\Time\Timer;
 use  App\Lib\ApiCache\Video as VideoCache;
@@ -72,6 +73,9 @@ Class EasySwooleEvent implements EventInterface {
         ));
 
         Di::getInstance()->set('REDIS', Redis::getInstance());
+
+        //注入elasticsearch
+        Di::getInstance()->set('ES', ElasticSearch::getInstance());
 
         //注册消费者进程
         $allNum = 3;
