@@ -9,6 +9,7 @@
 namespace App\HttpController\Api;
 
 use App\Model\Video;
+use App\Model\EsVideo;
 use EasySwoole\Core\Component\Di;
 use App\Lib\Redis\Redis;
 use EasySwoole\Core\Http\Message\Status;
@@ -95,27 +96,9 @@ class Index extends Base
     //测试elasticsearch
     public function testEs()
     {
-        $host = \Yaconf::get('es.host');
-        $params = [
-            "index" => "video",
-            "type" => "video",
-//            "id" => 1
-            "body" => [
-                "query" => [
-                    "match" => [
-                        "name" => "刘德华",
-                    ],
-                ],
-            ],
-        ];
-//        $builder = ClientBuilder::create();
-//        $client = $builder->setHosts([$host[1]])->build();
-//        $result = $client->get($params);
-
-        $esClient = Di::getInstance()->get("ES");
-
-        $result = $esClient->search($params);
-
+        $name = $this->params['name'];
+        $esVideoModel = new EsVideo();
+        $result = $esVideoModel->searchByName(trim($name));
         return $this->writeJson(Status::CODE_OK, 'success', $result);
     }
 

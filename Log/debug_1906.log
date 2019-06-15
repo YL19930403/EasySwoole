@@ -390,3 +390,4 @@ Stack trace:
 #5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
 #6 /Users/yuliang/EasySwoole/easyswoole(2): require('/Users/yuliang/...')
 #7 {ma]
+19-06-16 00:32:02:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Index.php] line[99] message:[Undefined index: name]
