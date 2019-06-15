@@ -370,3 +370,23 @@ Stack trace:
 #5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
 #6 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easys]
 19-06-09 16:07:58:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[85] message:[Undefined index: id]
+19-06-15 23:30:11:Error at file[/Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php] line[115] message:[Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501]. Error: Address already in use[48]. in /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php:115
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(115): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(25): serverStart(Array)
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
+#6 /Users/yuliang/EasySwoole/easyswoole(2): require('/Users/yuliang/...')
+#7 {ma]
+19-06-15 23:30:25:Error at file[/Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php] line[115] message:[Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501]. Error: Address already in use[48]. in /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php:115
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(115): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(61): EasySwoole\Core\Swoole\ServerManager->createMainServer()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Core.php(45): EasySwoole\Core\Swoole\ServerManager->start()
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(326): EasySwoole\Core\Core->run()
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(25): serverStart(Array)
+#5 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/bin/easyswoole(462): commandHandler()
+#6 /Users/yuliang/EasySwoole/easyswoole(2): require('/Users/yuliang/...')
+#7 {ma]

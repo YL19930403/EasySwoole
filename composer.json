@@ -9,6 +9,7 @@
         "easyswoole/mysqli": "^1.1",
         "topthink/think-orm": "^2.0",
         "joshcam/mysqli-database-class": "dev-master",
-        "alibabacloud/client": "^1.5"
+        "alibabacloud/client": "^1.5",
+        "elasticsearch/elasticsearch": "^7.0"
     }
 }

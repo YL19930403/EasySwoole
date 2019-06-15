@@ -13,6 +13,7 @@ use EasySwoole\Core\Component\Di;
 use App\Lib\Redis\Redis;
 use EasySwoole\Core\Http\Message\Status;
 use App\Lib\AliyunSDK\AliVod;
+use Elasticsearch\ClientBuilder;
 use EasySwoole\Core\Component\Trigger;
 
 class Index extends Base
@@ -89,6 +90,32 @@ class Index extends Base
     {
         $params = $this->request()->getRequestParam();
         Redis::getInstance()->rPush('redis_test', $params['age']);
+    }
+
+    //测试elasticsearch
+    public function testEs()
+    {
+
+        $host = \Yaconf::get('es.host');
+        $params = [
+            "index" => "video",
+            "type" => "video",
+//            "id" => 1
+            "body" => [
+                "query" => [
+                    "match" => [
+                        "name" => "刘德华",
+                    ],
+                ],
+            ],
+        ];
+        $builder = ClientBuilder::create();
+        $client = $builder->setHosts([$host[1]])->build();
+//        $result = $client->get($params);
+        $result = $client->search($params);
+        print_r(array_column($result, '_source'));
+
+        return $this->writeJson(Status::CODE_OK, 'success', $result);
     }
 
     /*
