@@ -8,34 +8,16 @@
 
 namespace App\Model;
 
-use EasySwoole\Core\Component\Di;
-
-class EsVideo
+class EsVideo extends EsBase
 {
-    private $index = 'video';  //索引
-    private $type = 'video';
+//    public $index = 'video';  //索引
+//    public $type = 'video';
 
-    public function searchByName($name, $type='match')
+    public function __construct()
     {
-        $name = trim($name);
-        if(empty($name))
-        {
-            return [];
-        }
-
-        $params = [
-            "index" => $this->index,
-            "type" => $this->type,
-            "body" => [
-                "query" => [
-                    $type => [
-                        "name" => $name,
-                    ],
-                ],
-            ],
-        ];
-
-        $esClient = Di::getInstance()->get("ES");
-        return $esClient->search($params);
+        $this->index = 'video';
+        $this->type = 'video';
+        parent::__construct();
     }
+
 }
