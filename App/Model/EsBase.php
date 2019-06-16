@@ -28,10 +28,12 @@ class EsBase
     /**
      * 根据名字全文模糊搜索
      * @param $name
+     * @param int $from
+     * @param int $page_size
      * @param string $type
      * @return array
      */
-    public function searchByName($name, $type='match')
+    public function searchByName($name, int $from = 0, int $page_size = 10, $type='match')
     {
         $name = trim($name);
         if(empty($name))
@@ -48,10 +50,11 @@ class EsBase
                         "name" => $name,
                     ],
                 ],
+                'from' => $from,
+                'size' => $page_size,
             ],
         ];
 
-        $esClient = Di::getInstance()->get("ES");
-        return $esClient->search($params);
+        return $this->esClient->search($params);
     }
 }

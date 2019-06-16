@@ -63,13 +63,24 @@ class Base extends Controller
      * 获取分页
      * @param int $count
      * @param array $data
+     * @param bool $isSplice
      * @return array
      */
-    public function getPagingList($count=0, array $data=[])
+    public function getPagingList($count=0, array $data = [], $isSplice = true)
     {
         $totalPage = ceil($count / $this->params['page_size']);
 
-        $videoSpliceList = array_splice($data, $this->params['from'], $this->params['page_size']);
+        $maxPageSize = \Yaconf::get('page.maxPageSize');  //设置最大分页100
+        if($totalPage > $maxPageSize)
+        {
+            $totalPage = $maxPageSize;
+        }
+
+        $videoSpliceList = $data;
+        if($isSplice)
+        {
+            $videoSpliceList = array_splice($data, $this->params['from'], $this->params['page_size']);
+        }
         return [
             'total_page' => $totalPage,
             'page_size' =>  $this->params['page_size'],

@@ -159,7 +159,7 @@ class Video extends Base
             return $this->writeJson(Status::CODE_BAD_REQUEST, $ex->getMessage());
         }
         $count = count($videoData);
-        return $this->writeJson(Status::CODE_OK, 'success', $this->getPagingList($count, $videoData));
+        return $this->writeJson(Status::CODE_OK, 'success', $this->getPagingList($count, $videoData, true));
     }
 
 

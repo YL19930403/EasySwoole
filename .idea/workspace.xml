@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59301ed2-a3a9-416c-a0b5-a144def64fe0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/App/Model/EsBase.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/App/HttpController/Api/Search.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/App/Model/EsVideo.php" afterPath="$PROJECT_DIR$/App/Model/EsVideo.php" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/Api/Base.php" afterPath="$PROJECT_DIR$/App/HttpController/Api/Base.php" />
+      <change beforePath="$PROJECT_DIR$/App/HttpController/Api/Video.php" afterPath="$PROJECT_DIR$/App/HttpController/Api/Video.php" />
+      <change beforePath="$PROJECT_DIR$/App/Model/EsBase.php" afterPath="$PROJECT_DIR$/App/Model/EsBase.php" />
       <change beforePath="$PROJECT_DIR$/Log/console_1906.log" afterPath="$PROJECT_DIR$/Log/console_1906.log" />
+      <change beforePath="$PROJECT_DIR$/Log/debug_1906.log" afterPath="$PROJECT_DIR$/Log/debug_1906.log" />
       <change beforePath="$PROJECT_DIR$/Temp/pid.pid" afterPath="$PROJECT_DIR$/Temp/pid.pid" />
+      <change beforePath="$PROJECT_DIR$/ini/page.ini" afterPath="$PROJECT_DIR$/ini/page.ini" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,38 +41,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EasySwooleEvent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EasySwooleEvent.php">
+      <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Video.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="521">
+              <caret line="161" column="71" lean-forward="false" selection-start-line="161" selection-start-column="71" selection-end-line="161" selection-end-column="71" />
               <folding>
-                <element signature="e#109#133#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Redis.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Lib/Redis/Redis.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="54" column="3" lean-forward="false" selection-start-line="54" selection-start-column="3" selection-end-line="57" selection-end-column="5" />
-              <folding>
-                <element signature="e#117#139#0#PHP" expanded="true" />
-                <element signature="e#3229#3444#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ElasticSearch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Lib/ES/ElasticSearch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-              <folding>
-                <element signature="e#115#147#0#PHP" expanded="true" />
+                <element signature="e#5066#6887#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -78,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
-              <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+              <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
               <folding>
                 <element signature="e#127#147#0#PHP" expanded="true" />
                 <element signature="e#849#1517#0#PHP" expanded="false" />
@@ -100,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EsBase.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EsBase.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Model/EsBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="296">
+              <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -113,31 +92,51 @@
       <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Model/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="345">
+              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Singleton.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/AbstractInterface/Singleton.php">
+      <file leaf-file-name="Base.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="279">
+              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientBuilder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ClientBuilder.php">
+      <file leaf-file-name="page.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ini/page.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="159" column="7" lean-forward="false" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
+            <state relative-caret-position="30">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="46" column="66" lean-forward="false" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
               <folding>
-                <element signature="e#61#122#0#PHP" expanded="true" />
+                <element signature="e#126#148#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Status.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Http/Message/Status.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/App/Model/Video.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,7 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$name</find>
       <find>vali</find>
       <find>upload</find>
       <find>@</find>
@@ -174,7 +172,6 @@
       <find>getOn</find>
       <find>where</find>
       <find>getOne</find>
-      <find>$data</find>
       <find>zUnionS</find>
       <find>zinCrBy</find>
       <find>EasySwoole_Cache_Process</find>
@@ -186,6 +183,8 @@
       <find>setHa</find>
       <find>$redis</find>
       <find>constr</find>
+      <find>$data</find>
+      <find>$totalPage</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/App/HttpController</dir>
@@ -198,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Resource/welcome.html" />
         <option value="$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Http/AbstractInterface/Router.php" />
         <option value="$PROJECT_DIR$/App/HttpController/Router.php" />
         <option value="$PROJECT_DIR$/App/HttpController/Category.php" />
@@ -229,15 +227,12 @@
         <option value="$PROJECT_DIR$/App/Model/Base.php" />
         <option value="$PROJECT_DIR$/App/HttpController/Api/Upload.php" />
         <option value="$PROJECT_DIR$/ini/category.ini" />
-        <option value="$PROJECT_DIR$/ini/page.ini" />
-        <option value="$PROJECT_DIR$/App/HttpController/Api/Base.php" />
         <option value="$PROJECT_DIR$/App/Lib/ApiCache/Video.php" />
         <option value="$PROJECT_DIR$/ini/base.ini" />
         <option value="$PROJECT_DIR$/Config.php" />
         <option value="$PROJECT_DIR$/ini/redis.ini" />
         <option value="$PROJECT_DIR$/ini/aliyunconf.ini" />
         <option value="$PROJECT_DIR$/App/Process/Consumer.php" />
-        <option value="$PROJECT_DIR$/App/HttpController/Api/Video.php" />
         <option value="$PROJECT_DIR$/App/Lib/AliyunSDK/Sms.php" />
         <option value="$PROJECT_DIR$/App/Lib/Redis/Redis.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -249,6 +244,10 @@
         <option value="$PROJECT_DIR$/App/Model/EsVideo.php" />
         <option value="$PROJECT_DIR$/App/Model/Video.php" />
         <option value="$PROJECT_DIR$/App/Model/EsBase.php" />
+        <option value="$PROJECT_DIR$/App/HttpController/Api/Search.php" />
+        <option value="$PROJECT_DIR$/App/HttpController/Api/Video.php" />
+        <option value="$PROJECT_DIR$/ini/page.ini" />
+        <option value="$PROJECT_DIR$/App/HttpController/Api/Base.php" />
       </list>
     </option>
   </component>
@@ -383,6 +382,57 @@
               <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Message" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -481,12 +531,12 @@
       <workItem from="1559572517737" duration="3950000" />
       <workItem from="1559866818143" duration="26489000" />
       <workItem from="1560087161858" duration="265000" />
-      <workItem from="1560566000723" duration="6752000" />
+      <workItem from="1560566000723" duration="10923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141038000" />
+    <option name="totallyTimeSpent" value="145209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
@@ -525,20 +575,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Swoole/Time/Timer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Component/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Swoole/EventRegister.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
@@ -571,14 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="54" column="36" lean-forward="false" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,18 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="e#3086#3941#0#PHP" expanded="false" />
-            <element signature="e#4101#5053#0#PHP" expanded="false" />
-            <element signature="e#5060#6881#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ini/aliyunconf.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -817,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ini/page.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ini/category.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -862,7 +870,7 @@
         <state relative-caret-position="323">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
-            <element signature="e#109#133#0#PHP" expanded="true" />
+            <element signature="e#109#133#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -872,7 +880,7 @@
         <state relative-caret-position="346">
           <caret line="54" column="3" lean-forward="false" selection-start-line="54" selection-start-column="3" selection-end-line="57" selection-end-column="5" />
           <folding>
-            <element signature="e#117#139#0#PHP" expanded="true" />
+            <element signature="e#117#139#0#PHP" expanded="false" />
             <element signature="e#3229#3444#0#PHP" expanded="false" />
           </folding>
         </state>
@@ -883,7 +891,7 @@
         <state relative-caret-position="270">
           <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="e#115#147#0#PHP" expanded="true" />
+            <element signature="e#115#147#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -901,7 +909,7 @@
     <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
-          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
           <folding>
             <element signature="e#127#147#0#PHP" expanded="true" />
             <element signature="e#849#1517#0#PHP" expanded="false" />
@@ -912,18 +920,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Model/Base.php">
+    <entry file="file://$PROJECT_DIR$/App/Model/Video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="270">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Model/Video.php">
+    <entry file="file://$PROJECT_DIR$/vendor/easyswoole/easyswoole/src/Core/Http/Message/Status.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -938,8 +946,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Model/EsBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Model/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="161" column="71" lean-forward="false" selection-start-line="161" selection-start-column="71" selection-end-line="161" selection-end-column="71" />
+          <folding>
+            <element signature="e#5066#6887#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="46" column="66" lean-forward="false" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
+          <folding>
+            <element signature="e#126#148#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ini/page.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
