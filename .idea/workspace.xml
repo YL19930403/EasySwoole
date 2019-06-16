@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59301ed2-a3a9-416c-a0b5-a144def64fe0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/App/HttpController/Api/Search.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/App/HttpController/Api/Base.php" afterPath="$PROJECT_DIR$/App/HttpController/Api/Base.php" />
-      <change beforePath="$PROJECT_DIR$/App/HttpController/Api/Video.php" afterPath="$PROJECT_DIR$/App/HttpController/Api/Video.php" />
-      <change beforePath="$PROJECT_DIR$/App/Model/EsBase.php" afterPath="$PROJECT_DIR$/App/Model/EsBase.php" />
       <change beforePath="$PROJECT_DIR$/Log/console_1906.log" afterPath="$PROJECT_DIR$/Log/console_1906.log" />
-      <change beforePath="$PROJECT_DIR$/Log/debug_1906.log" afterPath="$PROJECT_DIR$/Log/debug_1906.log" />
       <change beforePath="$PROJECT_DIR$/Temp/pid.pid" afterPath="$PROJECT_DIR$/Temp/pid.pid" />
-      <change beforePath="$PROJECT_DIR$/ini/page.ini" afterPath="$PROJECT_DIR$/ini/page.ini" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,22 +47,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
-              <folding>
-                <element signature="e#127#147#0#PHP" expanded="true" />
-                <element signature="e#849#1517#0#PHP" expanded="false" />
-                <element signature="e#1523#2279#0#PHP" expanded="false" />
-                <element signature="e#2339#2470#0#PHP" expanded="false" />
-                <element signature="e#2999#5432#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EsVideo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Model/EsVideo.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EsBase.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EsBase.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Model/EsBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="248">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -99,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Base.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="358">
+              <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -243,11 +221,11 @@
         <option value="$PROJECT_DIR$/App/Model/Esbase.php" />
         <option value="$PROJECT_DIR$/App/Model/EsVideo.php" />
         <option value="$PROJECT_DIR$/App/Model/Video.php" />
-        <option value="$PROJECT_DIR$/App/Model/EsBase.php" />
         <option value="$PROJECT_DIR$/App/HttpController/Api/Search.php" />
         <option value="$PROJECT_DIR$/App/HttpController/Api/Video.php" />
         <option value="$PROJECT_DIR$/ini/page.ini" />
         <option value="$PROJECT_DIR$/App/HttpController/Api/Base.php" />
+        <option value="$PROJECT_DIR$/App/Model/EsBase.php" />
       </list>
     </option>
   </component>
@@ -324,141 +302,6 @@
               <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
               <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="HttpController" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="HttpController" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ES" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Redis" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ini" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="easyswoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Message" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="EasySwoole" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasySwoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Elasticsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -531,12 +374,12 @@
       <workItem from="1559572517737" duration="3950000" />
       <workItem from="1559866818143" duration="26489000" />
       <workItem from="1560087161858" duration="265000" />
-      <workItem from="1560566000723" duration="10923000" />
+      <workItem from="1560566000723" duration="12289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145209000" />
+    <option name="totallyTimeSpent" value="146575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
@@ -653,13 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -901,7 +737,7 @@
         <state relative-caret-position="119">
           <caret line="159" column="7" lean-forward="false" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
           <folding>
-            <element signature="e#61#122#0#PHP" expanded="true" />
+            <element signature="e#61#122#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -944,14 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Model/EsBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Model/Base.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -990,8 +818,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/HttpController/Api/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="358">
+          <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Model/EsBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding />
         </state>
       </provider>
