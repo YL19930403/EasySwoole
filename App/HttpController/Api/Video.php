@@ -9,14 +9,20 @@
 namespace App\HttpController\Api;
 
 use \App\Model\Video as VideoModel;
+use EasySwoole\Core\Component\IocContainer;
 use EasySwoole\Core\Component\Logger;
 use EasySwoole\Core\Swoole\Task\TaskManager;
 use EasySwoole\Core\Utility\Validate\Rule;
 use EasySwoole\Core\Utility\Validate\Rules;
 use EasySwoole\Core\Http\Message\Status;
 use EasySwoole\Core\Component\Di;
-use EasySwoole\Core\Component\Cache\Cache;
+//use EasySwoole\Core\Component\Cache\Cache;
 use App\Lib\ApiCache\Video as VideoCache;
+use \EasySwoole\Core\Swoole\Coroutine;
+use \EasySwoole\Core\Swoole;
+
+//测试
+require_once 'testClass.php';
 
 class Video extends Base
 {
@@ -56,7 +62,6 @@ class Video extends Base
         return $this->writeJson(Status::CODE_OK, 'OK', $video);
     }
 
-
     /**
      * 周排行榜
      * @return bool
@@ -72,12 +77,14 @@ class Video extends Base
             $ZSetKeys[] = date('Ymd', strtotime("-$i days"));
             $Weights[] = 1;
         }
+        //计算给定的一个或多个有序集的并集,其中给定 key 的数量必须以 numkeys 参数指定,并将该并集(结果集)储存到 destination => key
         $result = Di::getInstance()->get('REDIS')->zUnionStore(\Yaconf::get('redis.week_range_key'), $ZSetKeys, $Weights);
         if($result)
         {
-            $result = Di::getInstance()->get('REDIS')->zRevRange(\Yaconf::get('redis.week_range_key'), 0, -1, true);
+            //返回有序集中，指定区间内的成员,成员的位置按分数值递减(从大到小)来排列
+            $rangeList = Di::getInstance()->get('REDIS')->zRevRange(\Yaconf::get('redis.week_range_key'), 0, -1, true);
         }
-        return $this->writeJson(200, 'success', $result);
+        return $this->writeJson(200, 'success', $rangeList ?? []);
     }
 
     /**
@@ -207,5 +214,23 @@ class Video extends Base
             return $this->writeJson(Status::CODE_BAD_REQUEST, $e->getMessage());
         }
 
+    }
+
+
+    public function testIoc()
+    {
+        $c = new IocContainer();
+        $c->department = 'Department';
+        $c->company = function ($c){
+            return new \Company($c->department);
+        };
+        // 从容器中取得company
+        $company = $c->company;
+        $company->doSomething();
+
+        $di = new IocContainer();
+        $di->company = 'Company';
+        $company = $di->company;
+        $company->doSomething();
     }
 }

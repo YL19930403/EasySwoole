@@ -392,3 +392,99 @@ Stack trace:
 #7 {ma]
 19-06-16 00:32:02:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Index.php] line[99] message:[Undefined index: name]
 19-06-16 16:01:55:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Base.php] line[81] message:[Undefined variable: videoSpliceList]
+19-06-16 23:16:39:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:16:44:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:16:49:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:16:54:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:16:59:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:17:04:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:17:09:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:17:14:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:17:19:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:17:24:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:17:29:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-16 23:17:34:Error at file[/Users/yuliang/EasySwoole/App/Lib/Redis/Redis.php] line[102] message:[Redis::lPop(): send of 31 bytes failed with errno=32 Broken pipe]
+19-06-27 16:14:01:Error at file[/Users/yuliang/EasySwoole/App/Test/MyIterator.php] line[11] message:[Class 'App\Test\IteratorIterator' not found]
+19-06-27 16:17:29:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Itera.php] line[11] message:[require(./Test/MyIterator.php): failed to open stream: No such file or directory]
+19-06-27 16:17:29:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Itera.php] line[11] message:[require(): Failed opening required './Test/MyIterator.php' (include_path='.:/usr/local/Cellar/php/7.2.9_1/share/php/pear')]
+19-06-27 16:20:25:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Itera.php] line[9] message:[Cannot declare class MyIterator, because the name is already in use]
+19-06-28 21:31:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php] line[116] message:[Serialization of closure failed: The closure was not found within the abstract syntax tree.]
+19-06-28 21:31:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php] line[110] message:[Uncaught SuperClosure\Exception\ClosureUnserializationException: The closure did not unserialize to a SuperClosure. in /Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php:110
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/SuperClosure.php(35): SuperClosure\Serializer->unserialize('N;')
+#1 [internal function]: EasySwoole\Core\Component\SuperClosure->__wakeup()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(141): unserialize('O:42:"EasySwool...')
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(71): EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(Swoole\Http\Server), 20, 'O:42:"EasySwool...')
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 {main}
+  thrown]
+19-06-28 21:32:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php] line[116] message:[Serialization of closure failed: The closure was not found within the abstract syntax tree.]
+19-06-28 21:32:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php] line[110] message:[Uncaught SuperClosure\Exception\ClosureUnserializationException: The closure did not unserialize to a SuperClosure. in /Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php:110
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/SuperClosure.php(35): SuperClosure\Serializer->unserialize('N;')
+#1 [internal function]: EasySwoole\Core\Component\SuperClosure->__wakeup()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(141): unserialize('O:42:"EasySwool...')
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(71): EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(Swoole\Http\Server), 20, 'O:42:"EasySwool...')
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 {main}
+  thrown]
+19-06-28 21:33:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php] line[116] message:[Serialization of closure failed: The closure was not found within the abstract syntax tree.]
+19-06-28 21:33:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php] line[110] message:[Uncaught SuperClosure\Exception\ClosureUnserializationException: The closure did not unserialize to a SuperClosure. in /Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php:110
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/SuperClosure.php(35): SuperClosure\Serializer->unserialize('N;')
+#1 [internal function]: EasySwoole\Core\Component\SuperClosure->__wakeup()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(141): unserialize('O:42:"EasySwool...')
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(71): EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(Swoole\Http\Server), 20, 'O:42:"EasySwool...')
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 {main}
+  thrown]
+19-06-28 21:34:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php] line[116] message:[Serialization of closure failed: The closure was not found within the abstract syntax tree.]
+19-06-28 21:34:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php] line[110] message:[Uncaught SuperClosure\Exception\ClosureUnserializationException: The closure did not unserialize to a SuperClosure. in /Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php:110
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/SuperClosure.php(35): SuperClosure\Serializer->unserialize('N;')
+#1 [internal function]: EasySwoole\Core\Component\SuperClosure->__wakeup()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(141): unserialize('O:42:"EasySwool...')
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(71): EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(Swoole\Http\Server), 20, 'O:42:"EasySwool...')
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 {main}
+  thrown]
+19-06-28 21:35:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php] line[116] message:[Serialization of closure failed: The closure was not found within the abstract syntax tree.]
+19-06-28 21:35:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php] line[110] message:[Uncaught SuperClosure\Exception\ClosureUnserializationException: The closure did not unserialize to a SuperClosure. in /Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php:110
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/SuperClosure.php(35): SuperClosure\Serializer->unserialize('N;')
+#1 [internal function]: EasySwoole\Core\Component\SuperClosure->__wakeup()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(141): unserialize('O:42:"EasySwool...')
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(71): EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(Swoole\Http\Server), 20, 'O:42:"EasySwool...')
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 {main}
+  thrown]
+19-06-28 21:36:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php] line[116] message:[Serialization of closure failed: The closure was not found within the abstract syntax tree.]
+19-06-28 21:36:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php] line[110] message:[Uncaught SuperClosure\Exception\ClosureUnserializationException: The closure did not unserialize to a SuperClosure. in /Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php:110
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/SuperClosure.php(35): SuperClosure\Serializer->unserialize('N;')
+#1 [internal function]: EasySwoole\Core\Component\SuperClosure->__wakeup()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(141): unserialize('O:42:"EasySwool...')
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(71): EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(Swoole\Http\Server), 20, 'O:42:"EasySwool...')
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 {main}
+  thrown]
+19-06-28 21:37:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/SerializableClosure.php] line[116] message:[Serialization of closure failed: The closure was not found within the abstract syntax tree.]
+19-06-28 21:37:00:Error at file[/Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php] line[110] message:[Uncaught SuperClosure\Exception\ClosureUnserializationException: The closure did not unserialize to a SuperClosure. in /Users/yuliang/EasySwoole/vendor/jeremeamia/SuperClosure/src/Serializer.php:110
+Stack trace:
+#0 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/SuperClosure.php(35): SuperClosure\Serializer->unserialize('N;')
+#1 [internal function]: EasySwoole\Core\Component\SuperClosure->__wakeup()
+#2 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/EventHelper.php(141): unserialize('O:42:"EasySwool...')
+#3 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Component/Invoker.php(71): EasySwoole\Core\Swoole\EventHelper::EasySwoole\Core\Swoole\{closure}(Object(Swoole\Http\Server), 20, 'O:42:"EasySwool...')
+#4 /Users/yuliang/EasySwoole/vendor/easyswoole/easyswoole/src/Core/Swoole/ServerManager.php(137): EasySwoole\Core\Component\Invoker::callUserFuncArray(Object(Closure), Array)
+#5 {main}
+  thrown]
+19-06-30 22:00:55:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:01:02:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:01:04:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:01:05:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:01:05:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:03:09:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:04:41:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:04:45:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:06:09:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]
+19-06-30 22:07:04:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Video.php] line[83] message:[Undefined variable: rangeList]

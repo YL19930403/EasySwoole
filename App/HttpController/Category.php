@@ -13,7 +13,7 @@ use EasySwoole\Core\Http\AbstractInterface\Controller;
 class Category extends Controller
 {
 
-    //http://wudy.easyswoole.cn:8090/category
+    //http://wudy.easyswoole.cn:9501/category
     public function index()
     {
 //        $this->response()->write('category hello');

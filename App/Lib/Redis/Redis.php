@@ -167,7 +167,7 @@ class Redis
      * @param bool $type
      * @return array|bool
      */
-    public function zRevRange111($key, $start=0, $stop=-1, $type=true)
+    public function zRevRange($key, $start=0, $stop=-1, $type=true)
     {
         if(empty($key))
         {
@@ -184,7 +184,7 @@ class Redis
      * @param string $aggregateFunction
      * @return bool|int
      */
-    public function zUnionStore222($Output, array $ZSetKeys=[], array $Weights = [], $aggregateFunction='SUM')
+    public function zUnionStore($Output, array $ZSetKeys=[], array $Weights = [], $aggregateFunction='SUM')
     {
        if(empty($Output) || empty($ZSetKeys) )
        {
