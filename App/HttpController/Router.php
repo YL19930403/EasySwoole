@@ -20,6 +20,8 @@ class Router
         $routeCollector->get('/user', 'index.html');
         $routeCollector->get('rpc', '/Rpc/index');
 
+//        $routeCollector->addRoute('POST', '/ticketcategory', '/Index');
+
         $routeCollector->get('/', function (Request $request, Response $response){
             $response->write('this router index');
         });

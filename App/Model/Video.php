@@ -15,17 +15,17 @@ use EasySwoole\Config;
 class Video  extends Base //extends TpORM
 {
 
-    private $fields = 'id, name, cat_id, image, url, type, content, uploader, create_time, update_time, status, video_id, video_duration';
+    protected $fields = 'id, name, cat_id, image, url, type, content, uploader, create_time, update_time, status, video_id, video_duration';
 
     public function __construct()
     {
-        $this->tableName = 'video';
+        $this->tableName = 'videos';
         parent::__construct();
     }
 
     public function getVideoBy($id)
     {
-        return $this->where(['id' => 1])->field('*')->find();
+        return $this->where(['id' => $id])->field($this->fields)->find();
     }
 
     /**

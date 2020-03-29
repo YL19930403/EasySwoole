@@ -9,6 +9,7 @@
 namespace App\HttpController;
 
 use EasySwoole\Core\Http\AbstractInterface\Controller;
+use EasySwoole\Core\Http\Message\Status;
 
 class Category extends Controller
 {
@@ -21,7 +22,7 @@ class Category extends Controller
             'name' => 'wudy',
             'age' => 26,
         ];
-        return $this->writeJson(200, 'ok', $data);
+        return $this->writeJson(Status::CODE_OK, 'ok', $data);
 
     }
 }

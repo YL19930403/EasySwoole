@@ -8,6 +8,7 @@
 
 namespace App\HttpController\Api;
 
+use App\Model\Entity\VideoInfo;
 use App\Model\Video;
 use App\Model\EsVideo;
 use EasySwoole\Core\Component\Di;
@@ -44,12 +45,12 @@ class Index extends Base
         //查询数据库(MysqliDb方式)
         //在mainServerCreate方法中已经注入过了MYSQL
         $db = Di::getInstance()->get('MYSQL');
-        $result = $db->where('id', 15)->getOne('video');
+        $result = $db->where('id', 15)->getOne('videos');
         return $this->writeJson(200, 'ok', $result);
 
         //查询数据库(TpORM)
-//        $vModel = new Video();
-//        $result = $vModel->getVideoBy(1);
+//        $vModel = new VideoInfo();
+//        $result = $vModel->getVideoBy(15);
 //        return $this->writeJson(200, 'ok', $result);
     }
 
@@ -62,18 +63,18 @@ class Index extends Base
 //        return $this->writeJson(200, 'ok', $result);
         $data = [
             'name' => 'timo',
-            'age' => 30,
+            'age' => 10,
         ];
-        //Redis操作方法1：
-        //自己封装的Redis类
-        Redis::getInstance()->set('test', $data);
-        $result = Redis::getInstance()->get('test');
+//        //Redis操作方法1：
+//        //自己封装的Redis类
+//        Redis::getInstance()->set('test', $data);
+//        $result = Redis::getInstance()->get('test');
 
         //Redis操作方法2:
         //在mainServerCreate方法中已经注入过了REDIS
-//        $redisDb = Di::getInstance()->get('REDIS');
-//        $redisDb->set('test', $data, 180);
-//        $result = $redisDb->get('test');
+        $redisDb = Di::getInstance()->get('REDIS');
+        $redisDb->set('test', $data, 180);
+        $result = $redisDb->get('test');
         return $this->writeJson(200, 'ok', $result);
 
     }
@@ -94,12 +95,52 @@ class Index extends Base
     }
 
     //测试elasticsearch
+    //http://wudy.easyswoole.cn:9501/api/index/testEs?name=余亮
     public function testEs()
     {
         $name = $this->params['name'];
         $esVideoModel = new EsVideo();
         $result = $esVideoModel->searchByName(trim($name));
         return $this->writeJson(Status::CODE_OK, 'success', $result);
+    }
+
+    /**
+     * @param name， content， cat_id， url
+     * @return bool
+     */
+    public function addToEs(){
+        $params = $this->params;
+        unset($params['from'], $params['page_size'], $params['page_no']);
+        $esVideo = new EsVideo();
+        $ret = $esVideo->add($params);
+        if($ret){
+            return $this->writeJson(Status::CODE_OK, '插入成功');
+        }
+        return $this->writeJson(Status::CODE_BAD_REQUEST, '插入失败');
+    }
+
+    public function modifyToEs(){
+        $params = $this->params;
+
+        $esVideo = new EsVideo();
+
+        $videoInfo = new VideoInfo();
+        $videoInfo->name = $params['name'] ?? '';
+        $videoInfo->content = $params['content'] ?? '';
+        $data = $videoInfo->toArray();
+        $res = $esVideo->updateOne($params['id'], $data);
+        //todo
+    }
+
+    /**
+     * 走ES搜索数据
+     * http://wudy.easyswoole.cn:9501/api/index/getVideoDetail
+     */
+    public function getVideoDetail(){
+        $params = $this->params;
+        $esVideo = new EsVideo();
+        $res = $esVideo->getOneInfo($params['id']);
+        return $this->writeJson(Status::CODE_OK, 'success', $res);
     }
 
     /*

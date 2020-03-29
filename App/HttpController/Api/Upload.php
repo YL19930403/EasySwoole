@@ -47,7 +47,7 @@ class Upload extends Base
 //        {
 //            $obj = "\App\Lib\Upload\Image";
 //        }elseif ($type == 'video'){
-//            $obj = "\App\Lib\Upload\Video";
+//            $obj = "\App\Lib\Upload\VideoInfo";
 //        }
 
         try{

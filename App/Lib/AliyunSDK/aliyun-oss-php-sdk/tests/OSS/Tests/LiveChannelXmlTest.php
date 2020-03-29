@@ -83,13 +83,13 @@ BBBB;
     <Status>Live</Status>
     <ConnectedTime>2016-10-20T14:25:31.000Z</ConnectedTime>
     <RemoteAddr>10.1.2.4:47745</RemoteAddr>
-    <Video>
+    <VideoInfo>
         <Width>1280</Width>
         <Height>536</Height>
         <FrameRate>24</FrameRate>
         <Bandwidth>72513</Bandwidth>
         <Codec>H264</Codec>
-    </Video>
+    </VideoInfo>
         <Audio>
         <Bandwidth>6519</Bandwidth>
         <SampleRate>44100</SampleRate>
