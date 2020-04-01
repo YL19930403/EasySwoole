@@ -13,6 +13,7 @@ use App\Model\Video;
 use App\Model\EsVideo;
 use EasySwoole\Core\Component\Di;
 use App\Lib\Redis\Redis;
+use EasySwoole\Core\Component\Logger;
 use EasySwoole\Core\Http\Message\Status;
 use App\Lib\AliyunSDK\AliVod;
 use Elasticsearch\ClientBuilder;
@@ -104,6 +105,13 @@ class Index extends Base
         return $this->writeJson(Status::CODE_OK, 'success', $result);
     }
 
+    public function testEsFilter(){
+        $params = $this->request()->getRequestParam();
+        $esVideoModel = new EsVideo();
+        $result = $esVideoModel->boolSearch($params, 'must'); // must、should
+        return $this->writeJson(Status::CODE_OK, 'success', $result);
+    }
+
     /**
      * @param name， content， cat_id， url
      * @return bool
@@ -119,6 +127,9 @@ class Index extends Base
         return $this->writeJson(Status::CODE_BAD_REQUEST, '插入失败');
     }
 
+    /**
+     * @return bool
+     */
     public function modifyToEs(){
         $params = $this->params;
 
@@ -129,7 +140,12 @@ class Index extends Base
         $videoInfo->content = $params['content'] ?? '';
         $data = $videoInfo->toArray();
         $res = $esVideo->updateOne($params['id'], $data);
-        //todo
+        if ($res){
+            return $this->writeJson(Status::CODE_OK, '更新成功');
+        }
+
+        Logger::getInstance()->log('更新ES失败');
+        return $this->writeJson(Status::CODE_OK, '更新失败');
     }
 
     /**

@@ -10,19 +10,18 @@ namespace App\Model;
 
 use EasySwoole\Core\Component\Di;
 use EasySwoole\Core\Component\Logger;
+use Elasticsearch\ClientBuilder;
 use Elasticsearch\Common\Exceptions\MaxRetriesException;
 use Elasticsearch\Common\Exceptions\TransportException;
 
 /**
  * Class EsBase
  * @package App\Model
-// * @property string $index
-// * @property string $type
+ * @property string $index
+ * @property string $type
  */
 class EsBase
 {
-    public $index = 'video';
-    public $type = 'video';
     private $esClient = null;
 
     public function __construct()
@@ -68,6 +67,7 @@ class EsBase
 
         return $this->esClient->search($params);
     }
+
 
     /**
      * 更新一条数据
@@ -162,6 +162,22 @@ class EsBase
             ];
         }
 
+    }
 
+    // 2020-04-01
+    public function boolSearch(array $searchParams,$type='filter'){
+        $params = [
+            "index" => $this->index,
+            "type" => $this->type,
+        ];
+
+        foreach ($searchParams as $key => $value){
+            $params['body']['query']['bool'][$type][] = ['match' => [$key => $value]];
+        }
+
+
+//        print_r($params['body']);  //别删除
+
+        return $this->esClient->search($params);
     }
 }
