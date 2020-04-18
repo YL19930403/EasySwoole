@@ -10,6 +10,7 @@ namespace App\Model;
 
 use EasySwoole\Core\Component\Di;
 use EasySwoole\Core\Component\Logger;
+use EasySwoole\Core\Http\Message\Status;
 use Elasticsearch\ClientBuilder;
 use Elasticsearch\Common\Exceptions\MaxRetriesException;
 use Elasticsearch\Common\Exceptions\TransportException;
@@ -33,6 +34,39 @@ class EsBase
     {
         $this->$name = $value;
 
+    }
+
+
+    public function createIndex(array $params = []){
+        if (empty($params)){
+            return false;
+        }
+
+        $params = [
+            'index' => $params['index'],
+            'type' => $params['type'],
+            'id' => $params['id'],
+            'body' => $params['body']
+        ];
+
+        //路径： vendor/elasticsearch/elasticsearch/src/Elasticsearch/Client.php
+        return $this->esClient->create($params);
+    }
+
+    public function deleteIndex(array $params = []){
+        if (empty($params)){
+            return false;
+        }
+
+        $params = [
+            'index' => $params['index'],
+            'type' => $params['type'],
+            'id' => $params['id'],
+        ];
+
+        //路径： vendor/elasticsearch/elasticsearch/src/Elasticsearch/Client.php
+        $res = $this->esClient->delete($params);
+        return $res;
     }
 
     /**

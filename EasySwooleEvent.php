@@ -9,10 +9,12 @@
 namespace EasySwoole;
 
 
+use App\Exception\ExceptionHandler;
 use App\Lib\Redis\Redis;
 use App\Process\Consumer;
 use \EasySwoole\Core\AbstractInterface\EventInterface;
 use EasySwoole\Core\Component\Di;
+use EasySwoole\Core\Component\SysConst;
 use \EasySwoole\Core\Swoole\ServerManager;
 use \EasySwoole\Core\Swoole\EventRegister;
 use \EasySwoole\Core\Http\Request;
@@ -35,6 +37,9 @@ Class EasySwooleEvent implements EventInterface {
         //载入Conf文件夹中所有的配置文件
 //        EASYSWOOLE_ROOT = /Users/yuliang/EasySwoole
         self::loadConf(EASYSWOOLE_ROOT . '/Config');
+
+        // 注册异常处理类
+        Di::getInstance()->set(SysConst::HTTP_EXCEPTION_HANDLER, [ExceptionHandler::class, 'handle']);
     }
 
 

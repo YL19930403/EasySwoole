@@ -8,6 +8,7 @@
 
 namespace App\HttpController\Api;
 
+use App\Exception\ApiException;
 use App\Model\Entity\VideoInfo;
 use App\Model\Video;
 use App\Model\EsVideo;
@@ -157,6 +158,26 @@ class Index extends Base
         $esVideo = new EsVideo();
         $res = $esVideo->getOneInfo($params['id']);
         return $this->writeJson(Status::CODE_OK, 'success', $res);
+    }
+
+    /**
+     * 创建ES索引
+     * http://wudy.easyswoole.cn:9501/api/index/createIndex
+     *
+     */
+    public function createIndex(){
+        $params = $this->params;
+        $esVideo = new EsVideo();
+        $result = $esVideo->createIndex($params);
+        print_r($result);
+    }
+
+    public function deleteIndex(){
+        $params = $this->params;
+        $esVideo = new EsVideo();
+        $result = $esVideo->deleteIndex($params);
+        print_r($result);
+//        throw new ApiException('error', Status::RET_ERROR);
     }
 
     /*
