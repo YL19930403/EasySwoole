@@ -53,15 +53,18 @@ class EsBase
         return $this->esClient->create($params);
     }
 
-    public function deleteIndex(array $params = []){
-        if (empty($params)){
-            return false;
-        }
-
+    /**
+     * 删除
+     * @param int $id
+     * @param string $index
+     * @param string $type
+     * @return mixed
+     */
+    public function deleteOne(int $id, string $index = '', string $type = ''){
         $params = [
-            'index' => $params['index'],
-            'type' => $params['type'],
-            'id' => $params['id'],
+            'index' => $index,
+            'type' => $type,
+            'id' => $id,
         ];
 
         //路径： vendor/elasticsearch/elasticsearch/src/Elasticsearch/Client.php
@@ -151,13 +154,6 @@ class EsBase
         return $res;
     }
 
-    public function deleteOne($id){
-        $params = [
-            'id' => $id,
-        ];
-        return $this->esClient->index();
-    }
-
     /**
      * 新增一条
      * @param array $data
@@ -199,19 +195,43 @@ class EsBase
     }
 
     // 2020-04-01
-    public function boolSearch(array $searchParams,$type='filter'){
+    public function boolSearch(array $searchParams,$type='filter', $participleType = 'match'){ //match , term
+        $params = [
+            "index" => $this->index,
+            "type" => $this->type,
+            "client" => ['ignore' => [400,403,404, 405,408,409, 500]]
+//            "analyzer" => "ik_max_word", //默认是standard， 改为ik_max_word后 搜索"北京"，就能实现精确搜索
+//            "body" => ['analyzer' => 'ik_max_word']
+        ];
+
+        foreach ($searchParams as $key => $value){
+//            $params['body']['query']['bool'][$type][] = ['match' => [$key => strval($value)]];
+            $params['body']['query']['bool'][$type][$participleType] = [$key => strval($value)];
+        }
+
+
+        print_r($params);  //别删除
+
+        return $this->esClient->search($params);
+    }
+
+
+    /**
+     * 在外层拼搜索的body
+     * @param array $body
+     * @return mixed
+     */
+    public function boolSearchByBody(array $body = []){ //match , term
         $params = [
             "index" => $this->index,
             "type" => $this->type,
         ];
 
-        foreach ($searchParams as $key => $value){
-            $params['body']['query']['bool'][$type][] = ['match' => [$key => $value]];
-        }
+        $params['body']['query']['bool'] = $body;
 
-
-//        print_r($params['body']);  //别删除
+        print_r($params);  //别删除
 
         return $this->esClient->search($params);
     }
+
 }

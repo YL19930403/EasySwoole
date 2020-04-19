@@ -175,7 +175,7 @@ class Index extends Base
     public function deleteIndex(){
         $params = $this->params;
         $esVideo = new EsVideo();
-        $result = $esVideo->deleteIndex($params);
+        $result = $esVideo->deleteOne(intval($params['id']), $params['index'], $params['type']);
         print_r($result);
 //        throw new ApiException('error', Status::RET_ERROR);
     }

@@ -1,2 +1,3 @@
 20-04-17 23:25:22:Error at file[/Users/yuliang/EasySwoole/App/HttpController/Api/Index.php] line[167] message:[json_decode() expects parameter 1 to be string, array given]
 20-04-17 23:39:28:Error at file[/Users/yuliang/EasySwoole/App/Model/EsBase.php] line[48] message:[Undefined index: body]
+20-04-20 00:09:37:Error at file[/Users/yuliang/EasySwoole/App/Model/news.php] line[34] message:[Array to string conversion]
