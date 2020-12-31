@@ -168,6 +168,7 @@ class Index extends Base
     public function createIndex(){
         $params = $this->params;
         $esVideo = new EsVideo();
+        $params['body']['create_time'] = date('Y-m-d H:i:s');
         $result = $esVideo->createIndex($params);
         print_r($result);
     }

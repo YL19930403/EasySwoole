@@ -115,3 +115,7 @@ send server reload command at 19-05-23 02:39:53
 
 2019-05-23 14:46 fswatch[46709] (FSEvents.framework) !streamRef->isStarted(): failed assertion: FSEventStream was released (causing it to be deallocated) without calling FSEventStreamStop()
 
+npm ERR! missing script: start
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/yuliang/.npm/_logs/2020-04-21T10_34_51_653Z-debug.log
